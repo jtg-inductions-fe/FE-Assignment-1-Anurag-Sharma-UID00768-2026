@@ -1,1 +1,20 @@
-// TODO: Add styles as per the requirement
+@use '../abstracts/variables';
+@use '../abstracts/mixins';
+@use '../abstracts/functions';
+@use '../abstracts/placeholders';
+
+@import '@fontsource/poppins/300.css';
+@import '@fontsource/poppins/400.css';
+@import '@fontsource/poppins/500.css';
+@import '@fontsource/poppins/600.css';
+@import '@fontsource/poppins/700.css';
+
+@import '@fontsource/josefin-sans/400.css';
+@import '@fontsource/josefin-sans/700.css';
+
+@use '../styles/base/reset';
+@use '../styles/base/global';
+@use '../styles/base/typography';
+
+@use '../styles/base/components';
+@use '../styles/base/utilities';

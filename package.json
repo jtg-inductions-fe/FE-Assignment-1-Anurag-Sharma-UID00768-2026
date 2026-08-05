@@ -39,5 +39,9 @@
             "eslint --max-warnings=0"
         ],
         "*.{html,scss,json}": "prettier --check"
+    },
+    "dependencies": {
+        "@fontsource/josefin-sans": "^5.3.0",
+        "@fontsource/poppins": "^5.3.0"
     }
 }

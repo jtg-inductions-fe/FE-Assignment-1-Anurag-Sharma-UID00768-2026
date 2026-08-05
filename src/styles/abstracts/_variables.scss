@@ -1,0 +1,25 @@
+@use '../abstracts//functions' as *;
+
+$font-family: 'Poppins', sans-serif;
+$font-logo: 'josefin-sans', sans-serif;
+
+$fs-xs: get_rem(14);
+$fs-sm: get_rem(16);
+$fs-md: get_rem(18);
+$fs-lg: get_rem(24);
+$fs-xl: get_rem(26);
+$font-2xl: get_rem(30);
+$fs-3xl: get_rem(36);
+
+$fw-light: 300;
+$fw-regular: 400;
+$fw-medium: 500;
+$fw-bold: 700;
+
+$primary-color: #002f52;
+$secondary-color: #eb9b00;
+$white-color: #ffffff;
+$black-color: #000000;
+$text-color: #000000;
+$text-light-color: #474646;
+$background-color: #ebecee;
