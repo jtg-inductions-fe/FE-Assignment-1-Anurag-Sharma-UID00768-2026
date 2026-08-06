@@ -2,8 +2,8 @@
 
 ### Prerequisites
 
--   **Node.js**: Version 18+ or 20+. You can download and install it from nodejs.org.
--   **npm**: Node.js package manager, which comes bundled with Node.js.
+- **Node.js**: Version 18+ or 20+. You can download and install it from nodejs.org.
+- **npm**: Node.js package manager, which comes bundled with Node.js.
 
 ### Installing
 
