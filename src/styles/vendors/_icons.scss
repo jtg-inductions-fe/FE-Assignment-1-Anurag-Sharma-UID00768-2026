@@ -1,3 +1,4 @@
+/// Icon Font Styles
 @font-face {
     font-family: 'icomoon';
     src: url('fonts/icomoon.eot?w8m66o');
@@ -10,7 +11,6 @@
     font-style: normal;
     font-display: block;
 }
-
 [class^='icon-'],
 [class*=' icon-'] {
     font-family: 'icomoon' !important;
@@ -24,6 +24,7 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
+/// Icon Classes
 .icon-hamburger:before {
     content: '\e904';
     color: #fff;

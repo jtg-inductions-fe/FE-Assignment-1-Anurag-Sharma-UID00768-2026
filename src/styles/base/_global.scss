@@ -1,13 +1,15 @@
 @use '../abstracts//variables' as *;
 @use '../abstracts//mixins' as *;
 
+/// Global Styles
 html {
     scroll-behavior: smooth;
 }
 
+/// Reset default styles for all elements
 body {
     font-family: $font-family;
-    color: $text-color;
-    background: $background;
+    color: $color-text-main;
+    background: $color-bg-main;
     line-height: 1.5;
 }

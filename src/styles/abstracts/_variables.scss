@@ -1,25 +1,63 @@
 @use '../abstracts//functions' as *;
 
+/// Font Families
 $font-family: 'Poppins', sans-serif;
 $font-logo: 'josefin-sans', sans-serif;
 
-$fs-xs: get_rem(14);
-$fs-sm: get_rem(16);
-$fs-md: get_rem(18);
-$fs-lg: get_rem(24);
-$fs-xl: get_rem(26);
-$font-2xl: get_rem(30);
-$fs-3xl: get_rem(36);
+/// Font Sizes
+$fs-100: get_rem(14);
+$fs-200: get_rem(16);
+$fs-300: get_rem(18);
+$fs-400: get_rem(24);
+$fs-500: get_rem(26);
+$fs-600: get_rem(30);
+$fs-700: get_rem(36);
 
+/// Font Weights
 $fw-light: 300;
 $fw-regular: 400;
 $fw-medium: 500;
 $fw-bold: 700;
 
-$primary-color: #002f52;
-$secondary-color: #eb9b00;
-$white-color: #ffffff;
-$black-color: #000000;
-$text-color: #000000;
-$text-light-color: #474646;
-$background-color: #ebecee;
+/// Color Palette
+$palette-dark-blue: #002f52;
+$palette-orange: #eb9b00;
+$palette-white: #ffffff;
+$palette-black: #000000;
+$palette-dark-grey: #474646;
+$palette-light-bg: #ebecee;
+
+/// Primary Colors
+$color-bg-main: $palette-light-bg;
+$color-text-main: $palette-black;
+
+/// Breakpoints
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+$breakpoint-xxl: 1400px;
+
+/// Spacing Scale
+$space-100: 0.25rem;
+$space-200: 0.5rem;
+$space-300: 1rem;
+$space-400: 1.5rem;
+$space-500: 2rem;
+$space-600: 3rem;
+
+/// Container Widths
+$container-max-width: 1200px;
+
+/// Border Radius
+$border-radius-sm: 0.25rem;
+$border-radius-md: 0.5rem;
+$border-radius-lg: 1rem;
+$border-radius-xl: 1.5rem;
+$border-radius-circle: 50%;
+
+/// Line Heights
+$line-height-none: 1;
+$line-height-tight: 1.25;
+$line-height-normal: 1.5;
+$line-height-loose: 1.75;

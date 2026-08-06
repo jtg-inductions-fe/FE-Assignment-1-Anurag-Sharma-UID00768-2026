@@ -1,5 +1,6 @@
 @use '../abstracts/variables' as *;
 
+/// Reset default styles for all elements
 *,
 *::before,
 *::after {
@@ -25,13 +26,11 @@ ul,
 ol {
     list-style: none;
 }
-img,
-video {
+img {
     max-width: 100%;
     height: auto;
 }
 input,
-textarea,
 select,
 button {
     font-family: inherit;

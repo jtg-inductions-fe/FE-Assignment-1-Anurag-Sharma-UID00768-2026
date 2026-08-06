@@ -1,20 +1,12 @@
-@use '../abstracts/variables';
-@use '../abstracts/mixins';
-@use '../abstracts/functions';
-@use '../abstracts/placeholders';
+@use 'abstaracts/variables' as *;
+@use 'abstaracts/mixins' as *;
+@use 'abstracts/functions';
 
-@import '@fontsource/poppins/300.css';
-@import '@fontsource/poppins/400.css';
-@import '@fontsource/poppins/500.css';
-@import '@fontsource/poppins/600.css';
-@import '@fontsource/poppins/700.css';
+@use 'base/reset';
+@use 'base/global';
+@use 'base/typography';
 
-@import '@fontsource/josefin-sans/400.css';
-@import '@fontsource/josefin-sans/700.css';
+@use 'base/components';
+@use 'base/utilities';
 
-@use '../styles/base/reset';
-@use '../styles/base/global';
-@use '../styles/base/typography';
-
-@use '../styles/base/components';
-@use '../styles/base/utilities';
+@use 'vendors/icons';
