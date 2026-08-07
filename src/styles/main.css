@@ -146,7 +146,7 @@ caption {
 
 .icon-hamburger:before {
   content: "\e904";
-  color: #fff;
+  color: #002f52;
 }
 
 .icon-bag:before {
@@ -425,7 +425,122 @@ caption {
   }
 }
 .hero {
-  min-height: get_rem(215);
-  padding: get_rem(32) get_rem(24);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 13.4375rem;
+  padding: 2rem 1.5rem;
+  gap: 1.875rem;
   background: linear-gradient(to right, #002f52, #326589);
+  color: #ffffff;
+}
+
+.hero__text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.625rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.9375rem;
+}
+
+.hero__top__heading {
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+
+.text {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.hero__top__text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.125rem;
+}
+
+.hero__search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 0.5rem 2.125rem;
+  border-radius: 1.875rem;
+  border: 0.0625rem solid #ffffff;
+  background: transparent;
+  max-width: 36.625rem;
+}
+
+.hero__search__icon {
+  margin-top: 0.5rem;
+  padding: 0.1875rem;
+}
+
+.icon-search {
+  font-size: 1.25rem;
+}
+
+.hero__search__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.625rem;
+}
+
+.hero__search__input::-moz-placeholder {
+  color: white;
+  opacity: 1;
+  font-size: 0.875rem;
+  font-weight: 400;
+}
+
+.hero__search__input::placeholder {
+  color: white;
+  opacity: 1;
+  font-size: 0.875rem;
+  font-weight: 400;
+}
+
+.hero__search__input {
+  width: 13.75rem;
+  outline: none;
+  border: none;
+  background: transparent;
+  line-height: 1;
+}
+
+@media (min-width: 1024px) {
+  .hero {
+    min-height: 23.4375rem;
+    padding: 5.25rem 1.5rem;
+  }
+  .hero__top__heading {
+    font-size: 2.25rem;
+    font-weight: 700;
+  }
+  .hero__top__text {
+    flex-direction: row;
+    gap: 0.25rem;
+  }
+  .hero__search__input::-moz-placeholder {
+    font-size: 1rem;
+  }
+  .hero__search__input::placeholder {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 1728px) {
+  .hero {
+    min-height: 20.625rem;
+    padding: 5.25rem 22.5rem;
+  }
 }/*# sourceMappingURL=main.css.map */
