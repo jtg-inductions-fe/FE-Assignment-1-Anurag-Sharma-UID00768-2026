@@ -320,7 +320,7 @@ caption {
   font-size: 2rem;
 }
 
-.icon-heart {
+.navbar__action-fav {
   display: block;
 }
 
@@ -501,7 +501,7 @@ caption {
   .navbar__action span:not(.icon-nav-right) {
     display: none;
   }
-  .icon-heart {
+  .navbar__action-fav {
     display: block;
   }
 }
@@ -516,7 +516,7 @@ caption {
   .navbar__action span:not(.icon-nav-right) {
     display: inline;
   }
-  .icon-heart {
+  .navbar__action-fav {
     display: none;
   }
 <<<<<<< HEAD

@@ -89,7 +89,7 @@
     font-size: get_rem(32);
 }
 
-.icon-heart {
+.navbar__action-fav {
     display: block;
 }
 
@@ -223,7 +223,7 @@
         display: none;
     }
 
-    .icon-heart {
+    .navbar__action-fav {
         display: block;
     }
 }
@@ -241,7 +241,7 @@
         display: inline;
     }
 
-    .icon-heart {
+    .navbar__action-fav {
         display: none;
     }
 }
