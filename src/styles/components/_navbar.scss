@@ -1,0 +1,235 @@
+@use '../abstracts/functions' as *;
+@use '../abstracts/mixins' as *;
+@use '../abstracts/variables' as *;
+
+.header {
+    width: 100%;
+    max-height: get_rem(80);
+}
+
+.navbar {
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: $palette-white;
+    padding: 0 get_rem(30) 0 0;
+    position: relative;
+}
+
+.navbar__menu {
+    @include flex-center;
+    align-self: stretch;
+    width: get_rem(80);
+    background-color: rgb(8, 8, 86);
+    border: none;
+    padding: get_rem(28);
+    cursor: pointer;
+}
+
+.navbar__menu i {
+    @include flex-center;
+    font-size: get_rem(24);
+}
+
+.navbar__left {
+    @include flex-center;
+    gap: get_rem(35);
+}
+
+.navbar__logo {
+    @include flex-center;
+    gap: 0.5rem;
+}
+
+.navbar__logo div {
+    display: none;
+}
+
+.navbar__links {
+    display: none;
+    align-items: center;
+}
+
+.alura,
+.books {
+    font-family: $font-logo;
+    font-size: $fs-600;
+}
+
+.alura {
+    font-weight: $fw-bold;
+}
+
+.books {
+    font-weight: $fw-regular;
+}
+
+.navbar__actions {
+    @include flex-center;
+    gap: get_rem(40);
+    margin-left: auto;
+}
+
+.navbar__action {
+    @include flex-center;
+    gap: 0.5rem;
+    font-size: get_rem(20);
+    font-weight: $fw-regular;
+}
+
+.navbar__action span:not(.icon-nav-right) {
+    display: none;
+}
+
+.icon-bag,
+.icon-profile,
+.icon-heart {
+    font-size: get_rem(32);
+}
+
+.icon-heart {
+    display: block;
+}
+
+.icon-nav-right {
+    display: flex;
+    align-items: center;
+}
+
+.navbar__item {
+    position: relative;
+}
+
+.navbar__link {
+    display: block;
+    padding: get_rem(20) get_rem(30);
+    text-decoration: none;
+    color: $palette-black;
+    text-transform: uppercase;
+    font-size: 1rem;
+    transition: 0.3s ease;
+}
+
+.navbar__item:hover > .navbar__link {
+    background: $palette-dark-blue;
+    color: $palette-white;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: get_rem(260);
+    background: white;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    z-index: 100;
+}
+
+.navbar__item--dropdown:hover > .dropdown {
+    display: block;
+}
+
+.dropdown__item a {
+    display: block;
+    padding: get_rem(15) get_rem(20);
+    color: $palette-black;
+    text-decoration: none;
+}
+
+.dropdown__item:hover {
+    background: $palette-dark-blue;
+}
+
+.dropdown__item:hover a {
+    color: $palette-white;
+}
+
+.mobile__menu {
+    @include flex-column;
+    position: absolute;
+    top: get_rem(80);
+    left: 0;
+    display: none;
+    background-color: $palette-white;
+}
+
+.mobile__nav__link {
+    font-size: $fs-200;
+    font-weight: $fw-regular;
+    padding: get_rem(24) get_rem(24) get_rem(16) get_rem(24);
+    height: get_rem(64);
+    width: get_rem(300);
+    background-color: $palette-white;
+    color: $palette-black;
+    text-transform: uppercase;
+    cursor: pointer;
+
+    &--active {
+        font-weight: $fw-bold;
+        color: $palette-orange;
+        text-transform: lowercase;
+        text-transform: capitalize;
+    }
+}
+
+.move-right {
+    display: block;
+}
+
+@include tablet {
+    .navbar {
+        padding: 0 get_rem(40);
+    }
+
+    .navbar__menu {
+        display: none;
+    }
+
+    .navbar__left {
+        gap: get_rem(40);
+    }
+
+    .navbar__logo div {
+        display: block;
+    }
+
+    .navbar__links {
+        display: flex;
+    }
+
+    .navbar__actions {
+        gap: get_rem(35);
+    }
+
+    .navbar__action span:not(.icon-nav-right) {
+        display: none;
+    }
+
+    .icon-heart {
+        display: block;
+    }
+}
+
+@include desktop {
+    .navbar {
+        padding: 0 get_rem(50);
+    }
+
+    .navbar__actions {
+        gap: get_rem(60);
+    }
+
+    .navbar__action span:not(.icon-nav-right) {
+        display: inline;
+    }
+
+    .icon-heart {
+        display: none;
+    }
+}
