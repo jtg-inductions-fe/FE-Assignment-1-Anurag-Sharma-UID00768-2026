@@ -1,12 +1,12 @@
 @font-face {
     font-family: 'icomoon';
-    src: url('../../public/assets/fonts/icomoon.eot?w8m66o');
+    src: url('../../public/assets/fonts/icomoon.eot?8kgpf2');
     src:
-        url('../../public/assets/fonts/icomoon.eot?w8m66o#iefix')
+        url('../../public/assets/fonts/icomoon.eot?8kgpf2#iefix')
             format('embedded-opentype'),
-        url('../../public/assets/fonts/icomoon.ttf?w8m66o') format('truetype'),
-        url('../../public/assets/fonts/icomoon.woff?w8m66o') format('woff'),
-        url('../../public/assets/fonts/icomoon.svg?w8m66o#icomoon')
+        url('../../public/assets/fonts/icomoon.ttf?8kgpf2') format('truetype'),
+        url('../../public/assets/fonts/icomoon.woff?8kgpf2') format('woff'),
+        url('../../public/assets/fonts/icomoon.svg?8kgpf2#icomoon')
             format('svg');
     font-weight: normal;
     font-style: normal;
@@ -15,6 +15,7 @@
 
 [class^='icon-'],
 [class*=' icon-'] {
+    /* use !important to prevent issues with browser extensions that change fonts */
     font-family: 'icomoon' !important;
     font-style: normal;
     font-weight: normal;
@@ -22,14 +23,18 @@
     text-transform: none;
     line-height: 1;
 
+    /* Better Font Rendering =========== */
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
 
-/// Icon Classes
+.icon-search:before {
+    content: '\e905';
+    color: #fff;
+}
 .icon-hamburger:before {
     content: '\e904';
-    color: #002f52;
+    color: #fff;
 }
 .icon-bag:before {
     content: '\e903';

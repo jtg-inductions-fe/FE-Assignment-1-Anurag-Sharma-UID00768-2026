@@ -1,0 +1,7 @@
+@use '../abstracts/variables' as *;
+
+.hero {
+    min-height: get_rem(215);
+    padding: get_rem(32) get_rem(24);
+    background: $palette-dark-blue;
+}
