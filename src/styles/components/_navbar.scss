@@ -200,6 +200,10 @@
     background: linear-gradient(to right, #002f52, #326589);
 }
 
+.color-white::before {
+    color: $palette-white;
+}
+
 @include tablet {
     .navbar {
         padding: 0 get_rem(40);
