@@ -1,3 +1,8 @@
+/* 
+ * converts a pixel value into a relative rem value based on a 16px base font size
+ * @param {Number} $pixels - The pixel value to convert to rem.
+ * @return {Number} - The equivalent rem value 
+*/
 *,
 *::before,
 *::after {
@@ -57,41 +62,62 @@ body {
   width: 100%;
 }
 
+<<<<<<< HEAD
 h1,
 .heading-xl {
+=======
+h1 {
+>>>>>>> b240001 ([AS_A1_01]: Completed Navabar Section)
   font-size: 1.875rem;
   font-weight: 700;
   line-height: 1.2;
 }
 
+<<<<<<< HEAD
 h2,
 .heading-lg {
+=======
+h2 {
+>>>>>>> b240001 ([AS_A1_01]: Completed Navabar Section)
   font-size: 1.625rem;
   font-weight: 700;
   line-height: 1.3;
 }
 
+<<<<<<< HEAD
 h3,
 .heading-md {
+=======
+h3 {
+>>>>>>> b240001 ([AS_A1_01]: Completed Navabar Section)
   font-size: 1.5rem;
   font-weight: 700;
   line-height: 1.4;
 }
 
+<<<<<<< HEAD
 h4,
 .heading-sm {
+=======
+h4 {
+>>>>>>> b240001 ([AS_A1_01]: Completed Navabar Section)
   font-size: 1.125rem;
   font-weight: 700;
   line-height: 1.4;
 }
 
+<<<<<<< HEAD
 p,
 .text-md {
+=======
+p {
+>>>>>>> b240001 ([AS_A1_01]: Completed Navabar Section)
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
 }
 
+<<<<<<< HEAD
 small,
 .text-sm {
   font-size: 0.875rem;
@@ -113,12 +139,34 @@ small,
 
 .fw-bold {
   font-weight: 700;
+=======
+small {
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.5;
+>>>>>>> b240001 ([AS_A1_01]: Completed Navabar Section)
 }
 
 .brand-logo {
   font-family: "josefin-sans", sans-serif;
   font-size: 1.5rem;
   font-weight: 700;
+<<<<<<< HEAD
+=======
+}
+
+ul li,
+ol li {
+  font-size: 1.125rem;
+  font-style: none;
+  line-height: 1.5;
+}
+
+caption {
+  font-size: 0.875rem;
+  font-weight: 400;
+  text-align: center;
+>>>>>>> b240001 ([AS_A1_01]: Completed Navabar Section)
 }
 
 @font-face {
@@ -143,7 +191,11 @@ small,
 
 .icon-hamburger:before {
   content: "\e904";
+<<<<<<< HEAD
   color: #fff;
+=======
+  color: #002f52;
+>>>>>>> b240001 ([AS_A1_01]: Completed Navabar Section)
 }
 
 .icon-bag:before {
@@ -187,7 +239,11 @@ small,
   justify-content: center;
   align-self: stretch;
   width: 5rem;
+<<<<<<< HEAD
   background-color: rgb(8, 8, 86);
+=======
+  background-color: transparent;
+>>>>>>> b240001 ([AS_A1_01]: Completed Navabar Section)
   border: none;
   padding: 1.75rem;
   cursor: pointer;
@@ -288,7 +344,17 @@ small,
 }
 
 .navbar__item:hover > .navbar__link {
+<<<<<<< HEAD
   background: #002f52;
+=======
+  background: linear-gradient(to right, #002f52, #326589);
+  color: #ffffff;
+}
+
+.navbar__link:hover,
+.navbar__link:focus-visible {
+  background: linear-gradient(to right, #002f52, #326589);
+>>>>>>> b240001 ([AS_A1_01]: Completed Navabar Section)
   color: #ffffff;
 }
 
@@ -302,11 +368,19 @@ small,
   padding: 0;
   margin: 0;
   list-style: none;
+<<<<<<< HEAD
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
   z-index: 100;
 }
 
 .navbar__item--dropdown:hover > .dropdown {
+=======
+  z-index: 100;
+}
+
+.navbar__item--dropdown:hover > .dropdown,
+.navbar__item--dropdown:focus-within > .dropdown {
+>>>>>>> b240001 ([AS_A1_01]: Completed Navabar Section)
   display: block;
 }
 
@@ -317,11 +391,20 @@ small,
   text-decoration: none;
 }
 
+<<<<<<< HEAD
 .dropdown__item:hover {
   background: #002f52;
 }
 
 .dropdown__item:hover a {
+=======
+.dropdown__item:hover,
+.dropdown__item:focus-within {
+  background: linear-gradient(to right, #002f52, #326589);
+}
+
+.dropdown__item:hover a .dropdown_item:focus-within a {
+>>>>>>> b240001 ([AS_A1_01]: Completed Navabar Section)
   color: #ffffff;
 }
 
@@ -334,6 +417,10 @@ small,
   top: 5rem;
   left: 0;
   display: none;
+<<<<<<< HEAD
+=======
+  box-shadow: 0 0.25rem 0.625rem 0 rgba(0, 0, 0, 0.2509803922);
+>>>>>>> b240001 ([AS_A1_01]: Completed Navabar Section)
   background-color: #ffffff;
 }
 
@@ -359,6 +446,7 @@ small,
   display: block;
 }
 
+<<<<<<< HEAD
 @media (min-width: 64rem) {
   .navbar {
     padding: 0 2.5rem;
@@ -386,6 +474,39 @@ small,
   }
 }
 @media (min-width: 108rem) {
+=======
+.color-blue {
+  background: linear-gradient(to right, #002f52, #326589);
+}
+
+@media (min-width: 1024px) {
+  .navbar {
+    padding: 0 2.5rem;
+  }
+  .navbar__menu {
+    display: none;
+  }
+  .navbar__left {
+    gap: 2.5rem;
+  }
+  .navbar__logo div {
+    display: block;
+  }
+  .navbar__links {
+    display: flex;
+  }
+  .navbar__actions {
+    gap: 2.1875rem;
+  }
+  .navbar__action span:not(.icon-nav-right) {
+    display: none;
+  }
+  .icon-heart {
+    display: block;
+  }
+}
+@media (min-width: 1728px) {
+>>>>>>> b240001 ([AS_A1_01]: Completed Navabar Section)
   .navbar {
     padding: 0 3.125rem;
   }
@@ -398,4 +519,8 @@ small,
   .icon-heart {
     display: none;
   }
+<<<<<<< HEAD
 }/*# sourceMappingURL=main.css.map */
+=======
+}/*# sourceMappingURL=main.css.map */
+>>>>>>> b240001 ([AS_A1_01]: Completed Navabar Section)

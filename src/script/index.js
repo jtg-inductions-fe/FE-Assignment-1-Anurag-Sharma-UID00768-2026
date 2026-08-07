@@ -3,6 +3,7 @@ const mobileMenu = document.querySelector('.mobile__menu');
 
 hamburger.addEventListener('click', () => {
     mobileMenu.classList.toggle('move-right');
+    hamburger.classList.toggle('color-blue');
 });
 
 document.addEventListener('click', (event) => {
@@ -11,6 +12,7 @@ document.addEventListener('click', (event) => {
         !hamburger.contains(event.target)
     ) {
         mobileMenu.classList.remove('move-right');
+        hamburger.classList.toggle('color-blue');
     }
 });
 
@@ -22,5 +24,6 @@ const mobileLinks = document.querySelectorAll(
 mobileLinks.forEach((link) => {
     link.addEventListener('click', () => {
         mobileMenu.classList.remove('move-right');
+        hamburger.classList.toggle('color-blue');
     });
 });

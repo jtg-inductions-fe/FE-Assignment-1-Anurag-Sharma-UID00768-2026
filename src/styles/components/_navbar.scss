@@ -22,7 +22,7 @@
     @include flex-center;
     align-self: stretch;
     width: get_rem(80);
-    background-color: rgb(8, 8, 86);
+    background-color: transparent;
     border: none;
     padding: get_rem(28);
     cursor: pointer;
@@ -55,7 +55,7 @@
 .alura,
 .books {
     font-family: $font-logo;
-    font-size: $fs-600;
+    font-size: $fs-2xl;
 }
 
 .alura {
@@ -117,6 +117,12 @@
     color: $palette-white;
 }
 
+.navbar__link:hover,
+.navbar__link:focus-visible {
+    background: $palette-dark-blue;
+    color: $palette-white;
+}
+
 .dropdown {
     display: none;
     position: absolute;
@@ -127,11 +133,11 @@
     padding: 0;
     margin: 0;
     list-style: none;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
     z-index: 100;
 }
 
-.navbar__item--dropdown:hover > .dropdown {
+.navbar__item--dropdown:hover > .dropdown,
+.navbar__item--dropdown:focus-within > .dropdown {
     display: block;
 }
 
@@ -142,11 +148,12 @@
     text-decoration: none;
 }
 
-.dropdown__item:hover {
+.dropdown__item:hover,
+.dropdown__item:focus-within {
     background: $palette-dark-blue;
 }
 
-.dropdown__item:hover a {
+.dropdown__item:hover a .dropdown_item:focus-within a {
     color: $palette-white;
 }
 
@@ -156,11 +163,12 @@
     top: get_rem(80);
     left: 0;
     display: none;
+    box-shadow: 0 get_rem(4) get_rem(10) 0 #00000040;
     background-color: $palette-white;
 }
 
 .mobile__nav__link {
-    font-size: $fs-200;
+    font-size: $fs-sm;
     font-weight: $fw-regular;
     padding: get_rem(24) get_rem(24) get_rem(16) get_rem(24);
     height: get_rem(64);
@@ -180,6 +188,10 @@
 
 .move-right {
     display: block;
+}
+
+.color-blue {
+    background: linear-gradient(to right, #002f52, #326589);
 }
 
 @include tablet {
