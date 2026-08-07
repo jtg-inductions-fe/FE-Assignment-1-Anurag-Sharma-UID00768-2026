@@ -15,3 +15,6 @@ dist
 *.sw?
 src/styles/main.css
 src/styles/main.css.map
+
+# Local Netlify folder
+.netlify
