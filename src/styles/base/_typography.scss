@@ -1,0 +1,58 @@
+@use '../abstracts//variables' as *;
+
+h1 {
+    font-size: $fs-600;
+    font-weight: $fw-bold;
+    line-height: 1.2;
+}
+
+h2 {
+    font-size: $fs-500;
+    font-weight: $fw-bold;
+    line-height: 1.3;
+}
+
+h3 {
+    font-size: $fs-400;
+    font-weight: $fw-bold;
+    line-height: 1.4;
+}
+
+h4 {
+    font-size: $fs-300;
+    font-weight: $fw-bold;
+    line-height: 1.4;
+}
+
+p {
+    font-size: $fs-200;
+    font-weight: $fw-regular;
+    line-height: 1.5;
+}
+
+small {
+    font-size: $fs-100;
+    font-weight: $fw-regular;
+    line-height: 1.5;
+}
+
+.brand-logo {
+    font-family: $font-logo;
+    font-size: $fs-400;
+    font-weight: $fw-bold;
+}
+
+ul,
+ol {
+    li {
+        font-size: $fs-300;
+        font-style: none;
+        line-height: 1.5;
+    }
+}
+
+caption {
+    font-size: $fs-100;
+    font-weight: $fw-regular;
+    text-align: center;
+}

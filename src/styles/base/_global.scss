@@ -1,0 +1,13 @@
+@use '../abstracts//variables' as *;
+@use '../abstracts//mixins' as *;
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: $font-family;
+    color: $color-text-main;
+    background: $color-bg-main;
+    line-height: 1.5;
+}

@@ -1,1 +1,12 @@
-// TODO: Add styles as per the requirement
+@use 'abstracts/variables' as *;
+@use 'abstracts/mixins' as *;
+@use 'abstracts/functions';
+
+@use 'base/reset';
+@use 'base/global';
+@use 'base/typography';
+
+@use 'base/components';
+@use 'base/utilities';
+
+@use 'vendors/icons';
