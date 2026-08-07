@@ -1,62 +1,60 @@
 @use '../abstracts//functions' as *;
 
-/// Font Families
+// Font Families
 $font-family: 'Poppins', sans-serif;
 $font-logo: 'josefin-sans', sans-serif;
 
-/// Font Sizes
-$fs-100: get_rem(14);
-$fs-200: get_rem(16);
-$fs-300: get_rem(18);
-$fs-400: get_rem(24);
-$fs-500: get_rem(26);
-$fs-600: get_rem(30);
-$fs-700: get_rem(36);
+// Font Sizes
+$fs-xs: get_rem(14);
+$fs-sm: get_rem(16);
+$fs-md: get_rem(18);
+$fs-lg: get_rem(24);
+$fs-xl: get_rem(26);
+$fs-2xl: get_rem(30);
+$fs-3xl: get_rem(36);
 
-/// Font Weights
+// Font Weights
 $fw-light: 300;
 $fw-regular: 400;
 $fw-medium: 500;
 $fw-bold: 700;
 
-/// Color Palette
-$palette-dark-blue: #002f52;
+// Color Palette
+$palette-dark-blue: linear-gradient(to right, #002f52, #326589);
 $palette-orange: #eb9b00;
 $palette-white: #ffffff;
 $palette-black: #000000;
 $palette-dark-grey: #474646;
 $palette-light-bg: #ebecee;
 
-/// Primary Colors
+// Primary Colors
 $color-bg-main: $palette-light-bg;
 $color-text-main: $palette-black;
 
-/// Breakpoints
-$breakpoint-sm: 576px;
-$breakpoint-md: 768px;
-$breakpoint-lg: 992px;
-$breakpoint-xl: 1200px;
-$breakpoint-xxl: 1400px;
+// Breakpoints
+$breakpoint-mobile: get_rem(428);
+$breakpoint-tablet: get_rem(1024);
+$breakpoint-desktop: get_rem(1728);
 
-/// Spacing Scale
-$space-100: 0.25rem;
-$space-200: 0.5rem;
-$space-300: 1rem;
-$space-400: 1.5rem;
-$space-500: 2rem;
-$space-600: 3rem;
+// Spacing Scale
+$space-100: get_rem(4);
+$space-200: get_rem(8);
+$space-300: get_rem(16);
+$space-400: get_rem(24);
+$space-500: get_rem(32);
+$space-600: get_rem(48);
 
-/// Container Widths
-$container-max-width: 1200px;
+// Container Widths
+$container-max-width: get_rem(1200);
 
-/// Border Radius
-$border-radius-sm: 0.25rem;
-$border-radius-md: 0.5rem;
-$border-radius-lg: 1rem;
-$border-radius-xl: 1.5rem;
+// Border Radius
+$border-radius-sm: get_rem(4);
+$border-radius-md: get_rem(8);
+$border-radius-lg: get_rem(16);
+$border-radius-xl: get_rem(24);
 $border-radius-circle: 50%;
 
-/// Line Heights
+// Line Heights
 $line-height-none: 1;
 $line-height-tight: 1.25;
 $line-height-normal: 1.5;

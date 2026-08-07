@@ -1,12 +1,10 @@
 @use '../abstracts//variables' as *;
 @use '../abstracts//mixins' as *;
 
-/// Global Styles
 html {
     scroll-behavior: smooth;
 }
 
-/// Reset default styles for all elements
 body {
     font-family: $font-family;
     color: $color-text-main;

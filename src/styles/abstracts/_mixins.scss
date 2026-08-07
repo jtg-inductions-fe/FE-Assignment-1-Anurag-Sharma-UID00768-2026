@@ -1,37 +1,29 @@
-/// centers content both vertically and horizontally using flexbox
-/// @return {CSS} - The CSS properties for centering content using flexbox
+@use '../abstracts/variables' as *;
+
 @mixin flex-center {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-/// space flex items evenly accross the main axis with equal space between them
-/// @return {CSS} - The CSS properties for spacing flex items evenly
 @mixin flex-between {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-/// space flex items with equal space around each individual item
-/// @return {CSS} - The CSS properties for spacing flex items with equal space around each
 @mixin flex-around {
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
 
-/// space flex items perfectly evenly so all the gaps are exactly identical
-/// @return {CSS} - The CSS properties for spacing flex items perfectly evenly
 @mixin flex-evenly {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
 }
 
-/// Align items in a column layout and center them both vertically and horizontally
-/// @return {CSS} - The CSS properties for aligning items in a column layout and centering them
 @mixin flex-column {
     display: flex;
     flex-direction: column;
@@ -39,8 +31,6 @@
     justify-content: center;
 }
 
-/// Align items in a column layout and space them evenly with equal space around each item
-/// @return {CSS} - The CSS properties for aligning items in a column layout and spacing
 @mixin flex-column-around {
     display: flex;
     flex-direction: column;
@@ -48,8 +38,6 @@
     justify-content: space-around;
 }
 
-/// Alig items veritcally with perfectly identical spacing gaps between them
-/// @return {CSS} - The CSS properties for aligning items in a column layout and spacing
 @mixin flex-column-evenly {
     display: flex;
     flex-direction: column;
@@ -57,11 +45,29 @@
     justify-content: space-evenly;
 }
 
-/// Aign items vertically with maximum space distribution between them.
-/// @return {CSS} - The CSS properties for aligning items in a column layout and spacing
 @mixin flex-column-between {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+}
+
+@mixin tablet {
+    @media (min-width: $breakpoint-tablet) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: $breakpoint-desktop) {
+        @content;
+    }
+}
+
+@mixin flex($justify: center, $align: center, $direction: row, $gap: 0) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $direction;
+    gap: $gap;
 }
