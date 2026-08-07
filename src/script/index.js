@@ -12,7 +12,7 @@ document.addEventListener('click', (event) => {
         !hamburger.contains(event.target)
     ) {
         mobileMenu.classList.remove('move-right');
-        hamburger.classList.toggle('color-blue');
+        hamburger.classList.remove('color-blue');
     }
 });
 
