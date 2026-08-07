@@ -200,7 +200,7 @@ caption {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 2.1875rem;
+  gap: 0.3125rem;
 }
 
 .navbar__logo {
@@ -262,6 +262,7 @@ caption {
 
 .navbar__action-fav {
   display: block;
+  margin-top: 0.625rem;
 }
 
 .icon-nav-right {

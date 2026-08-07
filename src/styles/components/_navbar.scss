@@ -35,7 +35,7 @@
 
 .navbar__left {
     @include flex-center;
-    gap: get_rem(35);
+    gap: get_rem(5);
 }
 
 .navbar__logo {
@@ -91,6 +91,7 @@
 
 .navbar__action-fav {
     display: block;
+    margin-top: get_rem(10);
 }
 
 .icon-nav-right {
