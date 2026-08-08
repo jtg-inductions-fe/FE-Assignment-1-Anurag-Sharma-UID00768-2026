@@ -1,0 +1,284 @@
+@use '../abstracts/functions' as *;
+@use '../abstracts/mixins' as *;
+@use '../abstracts/variables' as *;
+
+.release {
+    @include flex-column;
+    width: 100vw;
+    // max-width: get_rem(428);
+    position: relative;
+    padding: get_rem(2);
+}
+
+.release__bottom {
+    position: relative;
+    width: 100%;
+    // overflow: hidden;
+}
+
+.release__top {
+    padding-top: get-rem(18);
+    padding-bottom: get_rem(8);
+    text-align: center;
+    background: $palette-white;
+    width: 100%;
+
+    p {
+        color: $palette-orange;
+        font-weight: $fw-bold;
+        font-size: $fs-md;
+        text-transform: uppercase;
+    }
+}
+.swiper__cover {
+    position: relative;
+    height: get_rem(250);
+    width: min(100%, get_rem(725));
+    margin: 0 auto;
+}
+
+.swiper {
+    height: 100%;
+    position: relative;
+    padding-top: get_rem(40);
+    max-width: get_rem(725);
+}
+
+.swiper-pagination {
+    position: absolute !important;
+    top: get_rem(4) !important;
+    bottom: auto !important;
+}
+
+.swiper-wrapper {
+    position: relative;
+    height: 100%;
+    margin-top: get_rem(35);
+    overflow-x: visible !important;
+}
+
+.swiper-slide {
+    height: 100%;
+    width: get_rem(180) !important;
+    box-shadow: get_rem(2) get_rem(4) get_rem(8) 0 rgba(0, 0, 0, 0.15) img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    display: none !important;
+    background: $palette-dark-blue !important;
+    border-radius: 50%;
+    height: get_rem(48) !important;
+    width: get_rem(48) !important;
+    box-sizing: border-box !important;
+
+    padding: get_rem(16);
+
+    color: $palette-white !important;
+    font-size: get_rem(15) !important;
+    font-weight: $fw-bold !important;
+    cursor: pointer;
+}
+
+.release__card {
+    @include flex-between;
+    align-items: flex-start;
+    width: 100%;
+    min-height: get_rem(295);
+    max-width: get_rem(588);
+    background-color: $palette-white;
+    box-shadow: get_rem(2) get_rem(4) get_rem(8) 0 rgba(0, 0, 0, 0.15);
+    margin: get_rem(20) get_rem(15);
+    gap: get_rem(30);
+    padding: get_rem(15) get_rem(10);
+    border-radius: get_rem(10);
+}
+
+.release__card__left {
+    @include flex-column;
+    align-items: flex-start;
+    align-items: flex-start;
+    gap: get_rem(15);
+    min-width: 0;
+}
+.release__card__right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-shrink: 0;
+    gap: get_rem(35);
+
+    img {
+        width: get_rem(188);
+        height: get_rem(188);
+        flex-shrink: 0;
+        object-fit: contain;
+    }
+}
+
+.release__card__content__top {
+    width: 100%;
+    text-align: left;
+}
+
+.release__card__text__top {
+    text-align: left;
+    color: $palette-orange;
+    font-size: $fs-sm;
+    font-weight: $fw-bold;
+}
+.release__card__content__mid {
+    width: 100%;
+    text-align: left;
+    word-break: normal;
+}
+
+.release__card__text__mid {
+    overflow-wrap: break-word;
+    text-align: left;
+    font-size: $fs-md;
+    font-weight: $fw-bold;
+    color: #002f52;
+}
+
+.release__card__content__bottom {
+    width: 100%;
+    text-align: left;
+    word-break: normal;
+}
+
+.release__card__text__bottom {
+    font-size: $fs-xs;
+    font-weight: $fw-regular;
+    color: $palette-black;
+}
+
+.release__heart,
+.release__bag {
+    font-size: get_rem(25);
+}
+.release__card__icons {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    padding-left: get_rem(12);
+    gap: get_rem(30);
+
+    align-items: center;
+}
+
+.release__button {
+    padding: get_rem(10) get_rem(30);
+    text-align: center;
+    font-size: $fs-sm;
+    font-weight: $fw-bold;
+    color: $palette-white;
+    background: $palette-orange;
+}
+
+.release__card__wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+@include tablet {
+    .release__card {
+        flex-direction: row;
+        gap: get_rem(80);
+    }
+
+    .release__card__left {
+        flex: 1;
+    }
+
+    .swiper-button-prev {
+        display: flex !important;
+        position: absolute !important;
+        top: get_rem(140) !important;
+        left: get_rem(-20) !important;
+    }
+    .swiper-button-next {
+        display: flex !important;
+        position: absolute !important;
+        top: get_rem(140) !important;
+        right: get_rem(-30) !important;
+    }
+    .release__top p {
+        font-size: $fs-xl;
+    }
+}
+
+@include desktop {
+    .release__bottom {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: get_rem(40);
+        width: 100%;
+        padding-top: get_rem(30);
+    }
+    .swiper__cover {
+        width: get_rem(600);
+        margin: 0;
+        height: get_rem(310);
+    }
+    .swiper-wrapper {
+        margin-top: get_rem(60);
+    }
+
+    .release__card__wrapper {
+        width: auto;
+        transform: translateY(get_rem(25));
+    }
+    .release__card {
+        width: get_rem(588);
+        height: get_rem(270);
+        display: flex;
+        min-height: 0;
+        flex-direction: row;
+        gap: get_rem(100);
+        padding: get_rem(20);
+    }
+
+    .release__card__left {
+        width: get_rem(300);
+        gap: get_rem(5);
+    }
+
+    .release__card__right {
+        img {
+            width: get_rem(150);
+            height: get_rem(150);
+            flex-shrink: 0;
+            object-fit: contain;
+        }
+    }
+    .release__card__icons {
+        margin-top: get_rem(15);
+    }
+
+    .swiper-button-prev {
+        display: flex !important;
+        position: absolute !important;
+        top: get_rem(170) !important;
+        left: get_rem(-20) !important;
+    }
+    .swiper-button-next {
+        display: flex !important;
+        position: absolute !important;
+        top: get_rem(170) !important;
+        right: get_rem(0) !important;
+    }
+    .release__top p {
+        font-size: $fs-xl;
+    }
+    .release__card__text__top {
+        font-size: get_rem(32);
+    }
+}
