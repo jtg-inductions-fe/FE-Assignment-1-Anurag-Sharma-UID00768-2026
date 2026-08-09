@@ -1,0 +1,137 @@
+@use '../abstracts/functions' as *;
+@use '../abstracts/mixins' as *;
+@use '../abstracts/variables' as *;
+
+.visited {
+    margin-top: get_rem(120);
+    @include flex-column;
+    gap: get_rem(32);
+    background: $palette-dark-blue;
+    padding: get_rem(24) get_rem(13);
+    width: 100%;
+
+    &__top {
+        text-transform: uppercase;
+        text-align: center;
+
+        p {
+            font-size: $fs-sm;
+            font-weight: $fw-light;
+            color: $palette-white;
+        }
+    }
+
+    &__bottom {
+        @include flex-center;
+        flex-wrap: wrap;
+        gap: get_rem(16);
+        width: 100%;
+        max-width: get_rem(900);
+        margin: 0 auto;
+
+        &__tab {
+            // flex: 1 1 calc(25% - get_rem(16));
+            background: $palette-orange;
+            color: $palette-white;
+            font-size: $fs-xs;
+            font-weight: $fw-bold;
+            padding: get_rem(16) get_rem(24);
+            text-transform: capitalize;
+            white-space: nowrap;
+            border: none;
+        }
+    }
+}
+
+@include tablet {
+    .visited {
+        padding: get_rem(32) get_rem(140);
+        gap: get_rem(40);
+
+        &__top {
+            p {
+                font-size: get_rem(32);
+            }
+        }
+
+        &__bottom {
+            gap: get_rem(24);
+            &__tab {
+                font-size: $fs-lg;
+                padding: get_rem(24) get_rem(32);
+
+                &:nth-child(1) {
+                    order: 1;
+                }
+                &:nth-child(2) {
+                    order: 3;
+                }
+                &:nth-child(3) {
+                    order: 3;
+                }
+                &:nth-child(4) {
+                    order: 4;
+                }
+                &:nth-child(5) {
+                    order: 5;
+                }
+                &:nth-child(6) {
+                    order: 6;
+                }
+                &:nth-child(7) {
+                    order: 2;
+                }
+                &:nth-child(8) {
+                    order: 8;
+                }
+            }
+        }
+    }
+}
+
+@include desktop {
+    .visited {
+        padding: get_rem(32) get_rem(140);
+        gap: get_rem(40);
+
+        &__top {
+            p {
+                font-size: get_rem(32);
+            }
+        }
+
+        &__bottom {
+            gap: get_rem(24);
+
+            &__tab {
+                font-size: $fs-lg;
+                padding: get_rem(24) get_rem(32);
+
+                &:nth-child(1) {
+                    order: 1;
+                }
+                &:nth-child(2) {
+                    order: 3;
+                }
+                &:nth-child(3) {
+                    order: 3;
+                }
+                &:nth-child(4) {
+                    order: 4;
+                }
+                &:nth-child(5) {
+                    order: 5;
+                }
+                &:nth-child(6) {
+                    order: 6;
+                }
+                &:nth-child(7) {
+                    order: 2;
+                }
+                &:nth-child(8) {
+                    order: 8;
+                }
+            }
+        }
+    }
+}

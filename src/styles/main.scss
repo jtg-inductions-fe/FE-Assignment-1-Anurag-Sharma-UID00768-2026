@@ -1,6 +1,6 @@
 @use 'abstracts/variables' as *;
 @use 'abstracts/mixins' as *;
-@use 'abstracts/functions';
+@use 'abstracts/functions' as *;
 
 @use 'base/reset';
 @use 'base/global';
@@ -13,3 +13,4 @@
 @use 'components/search';
 @use 'components/releases.scss';
 @use 'components/best-sellers';
+@use 'components/visited';

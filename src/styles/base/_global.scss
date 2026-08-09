@@ -1,9 +1,9 @@
 @use '../abstracts//variables' as *;
 @use '../abstracts//mixins' as *;
 
-html {
-    scroll-behavior: smooth;
-}
+// html {
+//     scroll-behavior: smooth;
+// }
 
 body {
     font-family: $font-family;
