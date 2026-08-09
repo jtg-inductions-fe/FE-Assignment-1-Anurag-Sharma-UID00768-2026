@@ -857,6 +857,7 @@ caption {
   width: 100vw;
   position: relative;
   padding: 0.125rem;
+  padding-bottom: 1.25rem;
 }
 
 .sellers__bottom {
@@ -1066,6 +1067,9 @@ caption {
 }
 
 @media (min-width: 1024px) {
+  .sellers {
+    padding-bottom: 3rem;
+  }
   .sellers__card {
     flex-direction: row;
     gap: 5rem;
@@ -1098,6 +1102,9 @@ caption {
   }
 }
 @media (min-width: 1728px) {
+  .sellers {
+    padding-bottom: 7.5rem;
+  }
   .sellers__bottom {
     display: flex;
     flex-direction: row;
