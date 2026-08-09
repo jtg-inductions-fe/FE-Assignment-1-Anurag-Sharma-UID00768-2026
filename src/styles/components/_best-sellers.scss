@@ -119,6 +119,13 @@
         object-fit: contain;
     }
 }
+.sellers__card__content__wrapper {
+    height: get_rem(40);
+    @include flex-column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: get_rem(12);
+}
 
 .sellers__card__content__top {
     width: 100%;
@@ -167,8 +174,8 @@
     display: flex;
     justify-content: flex-start;
     padding-left: get_rem(12);
-    gap: get_rem(25);
-    margin-top: get_rem(55);
+    gap: get_rem(20);
+    margin-top: get_rem(130);
 
     align-items: center;
 }
@@ -216,7 +223,7 @@
     }
 
     .sellers__card__icons {
-        margin-top: get_rem(60);
+        margin-top: get_rem(90);
     }
 
     .swiper-button-prev {
@@ -284,7 +291,7 @@
         }
     }
     .sellers__card__icons {
-        margin-top: get_rem(45);
+        margin-top: get_rem(80);
     }
 
     .sellers__button {
@@ -301,7 +308,7 @@
         display: flex !important;
         position: absolute !important;
         top: get_rem(170) !important;
-        right: get_rem(0) !important;
+        right: get_rem(-30) !important;
     }
     .sellers__top p {
         font-size: get_rem(32);
