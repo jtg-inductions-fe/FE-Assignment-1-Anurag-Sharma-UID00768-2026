@@ -15,6 +15,8 @@ new Swiper('.swiper', {
     pagination: {
         el: '.swiper-pagination',
         clickable: true,
+        dynamicBullets: true,
+        dynamicMainBullets: 3,
     },
 
     navigation: {
@@ -23,7 +25,8 @@ new Swiper('.swiper', {
     },
     breakpoints: {
         1024: {
-            slidesPerView: 3,
+            slidesPerView: 4,
+            spaceBetween: 75,
         },
 
         1728: {

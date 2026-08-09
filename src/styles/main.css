@@ -601,7 +601,7 @@ caption {
 }
 
 .swiper-slide {
-  height: 100%;
+  height: 15.625rem !important;
   width: 11.25rem !important;
   box-shadow: 0.125rem 0.25rem 0.5rem 0 rgba(0, 0, 0, 0.15) img;
   box-shadow-width: 100%;
@@ -633,7 +633,7 @@ caption {
   min-height: 18.4375rem;
   max-width: 36.75rem;
   background-color: #ffffff;
-  box-shadow: 0.125rem 0.25rem 0.5rem 0 rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0.625rem 0.1875rem -0.125rem rgba(0, 0, 0, 0.15);
   margin: 1.25rem 0.9375rem;
   gap: 1.875rem;
   padding: 0.9375rem 0.625rem;
@@ -714,7 +714,7 @@ caption {
   display: flex;
   justify-content: flex-start;
   padding-left: 0.75rem;
-  gap: 1.875rem;
+  gap: 1.25rem;
   align-items: center;
 }
 
@@ -737,24 +737,58 @@ caption {
   .release__card {
     flex-direction: row;
     gap: 5rem;
+    min-height: 0;
+    height: 16.625rem;
+  }
+  .swiper-slide {
+    height: 16.875rem !important;
   }
   .release__card__left {
     flex: 1;
   }
+  .release__card__right {
+    gap: 1.5625rem;
+  }
+  .release__card__right img {
+    width: 10.3125rem;
+    height: 10.3125rem;
+    flex-shrink: 0;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .release__bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.875rem;
+  }
   .swiper-button-prev {
     display: flex !important;
     position: absolute !important;
-    top: 8.75rem !important;
-    left: -1.25rem !important;
+    top: 12.1875rem !important;
+    left: -1.875rem !important;
   }
   .swiper-button-next {
     display: flex !important;
     position: absolute !important;
-    top: 8.75rem !important;
-    right: -1.875rem !important;
+    top: 12.1875rem !important;
+    right: -0.625rem !important;
   }
   .release__top p {
     font-size: 1.625rem;
+  }
+  .release__card__icons {
+    margin-top: 4.0625rem;
+  }
+  .swiper__cover {
+    height: 21.875rem;
+  }
+  .swiper-wrapper {
+    margin-top: 6.25rem;
+  }
+  .swiper-pagination {
+    margin-top: 1.5625rem;
   }
 }
 @media (min-width: 1728px) {
@@ -806,16 +840,16 @@ caption {
     display: flex !important;
     position: absolute !important;
     top: 10.625rem !important;
-    left: -1.25rem !important;
+    left: -2.1875rem !important;
   }
   .swiper-button-next {
     display: flex !important;
     position: absolute !important;
     top: 10.625rem !important;
-    right: 0rem !important;
+    right: -1.875rem !important;
   }
   .release__top p {
-    font-size: 1.625rem;
+    font-size: 2rem;
   }
   .release__card__text__top {
     font-size: 2rem;

@@ -58,7 +58,7 @@
 }
 
 .swiper-slide {
-    height: 100%;
+    height: get_rem(250) !important;
     width: get_rem(180) !important;
     box-shadow: get_rem(2) get_rem(4) get_rem(8) 0 rgba(0, 0, 0, 0.15) img {
         width: 100%;
@@ -91,7 +91,7 @@
     min-height: get_rem(295);
     max-width: get_rem(588);
     background-color: $palette-white;
-    box-shadow: get_rem(2) get_rem(4) get_rem(8) 0 rgba(0, 0, 0, 0.15);
+    box-shadow: 0 get_rem(10) get_rem(3) get_rem(-2) rgba(0, 0, 0, 0.15);
     margin: get_rem(20) get_rem(15);
     gap: get_rem(30);
     padding: get_rem(15) get_rem(10);
@@ -166,7 +166,7 @@
     display: flex;
     justify-content: flex-start;
     padding-left: get_rem(12);
-    gap: get_rem(30);
+    gap: get_rem(20);
 
     align-items: center;
 }
@@ -190,26 +190,57 @@
     .release__card {
         flex-direction: row;
         gap: get_rem(80);
+        min-height: 0;
+        height: get_rem(266);
+    }
+    .swiper-slide {
+        height: get_rem(270) !important;
     }
 
     .release__card__left {
         flex: 1;
     }
+    .release__card__right {
+        gap: get_rem(25);
 
+        img {
+            width: get_rem(165);
+            height: get_rem(165);
+            flex-shrink: 0;
+            object-fit: contain;
+        }
+    }
+
+    .release__bottom {
+        @include flex-column;
+        gap: get_rem(30);
+    }
     .swiper-button-prev {
         display: flex !important;
         position: absolute !important;
-        top: get_rem(140) !important;
-        left: get_rem(-20) !important;
+        top: get_rem(195) !important;
+        left: get_rem(-30) !important;
     }
     .swiper-button-next {
         display: flex !important;
         position: absolute !important;
-        top: get_rem(140) !important;
-        right: get_rem(-30) !important;
+        top: get_rem(195) !important;
+        right: get_rem(-10) !important;
     }
     .release__top p {
         font-size: $fs-xl;
+    }
+    .release__card__icons {
+        margin-top: get_rem(65);
+    }
+    .swiper__cover {
+        height: get_rem(350);
+    }
+    .swiper-wrapper {
+        margin-top: get_rem(100);
+    }
+    .swiper-pagination {
+        margin-top: get_rem(25);
     }
 }
 
@@ -267,16 +298,16 @@
         display: flex !important;
         position: absolute !important;
         top: get_rem(170) !important;
-        left: get_rem(-20) !important;
+        left: get_rem(-35) !important;
     }
     .swiper-button-next {
         display: flex !important;
         position: absolute !important;
         top: get_rem(170) !important;
-        right: get_rem(0) !important;
+        right: get_rem(-30) !important;
     }
     .release__top p {
-        font-size: $fs-xl;
+        font-size: get_rem(32);
     }
     .release__card__text__top {
         font-size: get_rem(32);
