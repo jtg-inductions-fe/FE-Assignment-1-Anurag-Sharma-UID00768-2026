@@ -552,6 +552,7 @@ caption {
   width: 100vw;
   position: relative;
   padding: 0.125rem;
+  padding-bottom: 1.25rem;
 }
 
 .release__bottom {
@@ -734,6 +735,9 @@ caption {
 }
 
 @media (min-width: 1024px) {
+  .release {
+    padding-bottom: 3rem;
+  }
   .release__card {
     flex-direction: row;
     gap: 5rem;
@@ -792,6 +796,9 @@ caption {
   }
 }
 @media (min-width: 1728px) {
+  .release {
+    padding-bottom: 7.5rem;
+  }
   .release__bottom {
     display: flex;
     flex-direction: row;

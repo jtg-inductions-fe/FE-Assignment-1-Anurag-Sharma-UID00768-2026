@@ -8,6 +8,7 @@
     // max-width: get_rem(428);
     position: relative;
     padding: get_rem(2);
+    padding-bottom: get_rem(20);
 }
 
 .release__bottom {
@@ -187,6 +188,9 @@
 }
 
 @include tablet {
+    .release {
+        padding-bottom: get_rem(48);
+    }
     .release__card {
         flex-direction: row;
         gap: get_rem(80);
@@ -245,6 +249,9 @@
 }
 
 @include desktop {
+    .release {
+        padding-bottom: get_rem(120);
+    }
     .release__bottom {
         display: flex;
         flex-direction: row;
