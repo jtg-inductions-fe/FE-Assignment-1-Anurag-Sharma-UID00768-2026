@@ -1,0 +1,112 @@
+@use '../abstracts/functions' as *;
+@use '../abstracts/mixins' as *;
+@use '../abstracts/variables' as *;
+
+.news {
+    padding: get_rem(24) get_rem(16);
+    background: $palette-white;
+    @include flex-column;
+    gap: get_rem(24);
+    width: 100%;
+
+    &__top {
+        @include flex-column;
+        align-items: flex-start;
+        gap: get_rem(8);
+
+        &__heading {
+            background-image: $palette-dark-blue;
+            color: transparent;
+            background-clip: text;
+            font-size: $fs-md;
+            font-weight: $fw-medium;
+            text-align: left;
+            width: 100%;
+            word-break: normal;
+        }
+
+        &__content {
+            background-image: $palette-dark-blue;
+            color: transparent;
+            background-clip: text;
+            font-size: $fs-sm;
+            font-weight: $fw-light;
+            width: 100%;
+            word-break: normal;
+            max-width: get_rem(360);
+        }
+    }
+
+    &__bottom {
+        padding: get_rem(10) get_rem(20);
+        border-radius: get_rem(30);
+        @include flex-row-start;
+        gap: get_rem(10);
+        border: 1px solid rgb(9, 28, 73);
+
+        i {
+            font-size: get_rem(16);
+        }
+
+        input::placeholder {
+            background-image: $palette-dark-blue;
+            color: transparent;
+            background-clip: text;
+            font-size: $fs-sm;
+            font-weight: $fw-regular;
+            width: 100%;
+        }
+    }
+}
+
+@include tablet {
+    .news {
+        padding: get_rem(30);
+        flex-direction: row;
+        gap: get_rem(25);
+        width: 100%;
+
+        &__top {
+            @include flex-column;
+            align-items: flex-start;
+            gap: get_rem(19);
+
+            &__heading {
+                font-size: $fs-lg;
+                font-weight: $fw-medium;
+                max-width: get_rem(375);
+            }
+
+            &__content {
+                font-size: $fs-sm;
+                font-weight: $fw-light;
+            }
+        }
+    }
+}
+
+@include desktop {
+    .news {
+        padding: get_rem(30);
+        flex-direction: row;
+        gap: get_rem(25);
+        width: 100%;
+
+        &__top {
+            @include flex-column;
+            align-items: flex-start;
+            gap: get_rem(19);
+
+            &__heading {
+                font-size: $fs-lg;
+                font-weight: $fw-medium;
+                max-width: get_rem(375);
+            }
+
+            &__content {
+                font-size: $fs-sm;
+                font-weight: $fw-light;
+            }
+        }
+    }
+}
