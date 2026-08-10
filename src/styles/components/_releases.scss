@@ -45,7 +45,7 @@
 
     &__card {
         @include flex-between;
-        align-items: flex-start;
+        align-items: stretch;
         width: 100%;
         min-height: get_rem(295);
         max-width: get_rem(588);
@@ -63,9 +63,11 @@
         }
 
         &__left {
-            @include flex-column;
-            align-items: flex-start;
-            gap: get_rem(15);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: get_rem(35);
             min-width: 0;
         }
 
@@ -84,12 +86,12 @@
             }
         }
 
-        &__content_wrapper {
-            height: get_rem(180);
-            @include flex-column;
+        &__content-wrapper {
+            display: flex;
+            flex-direction: column;
             justify-content: flex-start;
             align-items: flex-start;
-            gap: get_rem(8);
+            gap: get_rem(10);
         }
 
         &__content__top {
@@ -136,7 +138,7 @@
             justify-content: flex-start;
             padding-left: get_rem(12);
             gap: get_rem(20);
-            margin-top: get_rem(30);
+            margin-top: get_rem(40);
             align-items: center;
         }
     }
@@ -215,8 +217,9 @@
             min-height: 0;
             height: get_rem(266);
 
-            &__left {
-                flex: 1;
+            &__content__wrapper {
+                height: get_rem(115);
+                gap: get_rem(8);
             }
 
             &__right {
@@ -229,10 +232,6 @@
                     object-fit: contain;
                 }
             }
-
-            &__icons {
-                margin-bottom: get_rem(10);
-            }
         }
     }
 
@@ -242,9 +241,9 @@
             padding: 20px;
         }
 
-        &__cover {
-            height: get_rem(360);
-        }
+        // &__cover {
+        //     height: get_rem(360);
+        // }
 
         &-pagination {
             margin-top: get_rem(25);
@@ -307,6 +306,10 @@
                 width: auto;
                 transform: translateY(get_rem(25));
             }
+            &__content__wrapper {
+                height: get_rem(120);
+                gap: get_rem(8);
+            }
 
             &__left {
                 width: get_rem(300);
@@ -338,7 +341,7 @@
         &__cover {
             width: get_rem(600);
             margin: 0;
-            height: get_rem(310);
+            // height: get_rem(310);
         }
 
         &-wrapper {
