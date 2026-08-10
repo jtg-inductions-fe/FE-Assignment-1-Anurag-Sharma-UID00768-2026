@@ -5,7 +5,6 @@
 .sellers {
     @include flex-column;
     width: 100vw;
-    // max-width: get_rem(428);
     position: relative;
     padding: get_rem(2);
     padding-bottom: get_rem(20);
@@ -14,7 +13,9 @@
 .sellers__bottom {
     position: relative;
     width: 100%;
-    // overflow: hidden;
+}
+.card {
+    min-height: get_rem(290) !important;
 }
 
 .sellers__top {
@@ -31,6 +32,7 @@
         text-transform: uppercase;
     }
 }
+
 .swiper__cover {
     position: relative;
     width: min(100%, get_rem(725));
@@ -43,10 +45,12 @@
     padding-top: get_rem(40);
     max-width: get_rem(725);
 }
+
 .swiper__pagination__wrapper {
     position: relative;
     padding: 20px;
 }
+
 .swiper-wrapper {
     position: relative;
     height: 100%;
@@ -58,7 +62,9 @@
     height: 100%;
     height: get_rem(250) !important;
     width: get_rem(180) !important;
-    box-shadow: get_rem(2) get_rem(4) get_rem(8) 0 rgba(0, 0, 0, 0.15) img {
+    box-shadow: get_rem(2) get_rem(4) get_rem(8) 0 rgba(0, 0, 0, 0.15);
+
+    img {
         width: 100%;
         height: 100%;
         object-fit: contain;
@@ -73,109 +79,11 @@
     height: get_rem(48) !important;
     width: get_rem(48) !important;
     box-sizing: border-box !important;
-
     padding: get_rem(16);
-
     color: $palette-white !important;
     font-size: get_rem(15) !important;
     font-weight: $fw-bold !important;
     cursor: pointer;
-}
-
-.sellers__card {
-    @include flex-between;
-    align-items: flex-start;
-    width: 100%;
-    min-height: get_rem(295);
-    max-width: get_rem(588);
-    background-color: $palette-white;
-    box-shadow: 0 get_rem(10) get_rem(3) get_rem(-4) rgba(0, 0, 0, 0.15);
-    margin: get_rem(20) get_rem(15);
-    gap: get_rem(5);
-    padding: get_rem(20) get_rem(12);
-    border-radius: get_rem(10);
-}
-
-.sellers__card__left {
-    @include flex-column;
-    align-items: flex-start;
-    align-items: flex-start;
-    gap: get_rem(10);
-    min-width: 0;
-}
-.sellers__card__right {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex-shrink: 0;
-    gap: get_rem(50);
-
-    img {
-        width: get_rem(188);
-        height: get_rem(188);
-        flex-shrink: 0;
-        object-fit: contain;
-    }
-}
-.sellers__card__content__wrapper {
-    height: get_rem(40);
-    @include flex-column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    gap: get_rem(12);
-}
-
-.sellers__card__content__top {
-    width: 100%;
-    text-align: left;
-}
-
-.sellers__card__text__top {
-    text-align: left;
-    color: $palette-orange;
-    font-size: $fs-sm;
-    font-weight: $fw-bold;
-}
-.sellers__card__content__mid {
-    width: 100%;
-    text-align: left;
-    word-break: normal;
-}
-
-.sellers__card__text__mid {
-    overflow-wrap: break-word;
-    text-align: left;
-    font-size: $fs-md;
-    font-weight: $fw-bold;
-    color: #002f52;
-}
-
-.sellers__card__content__bottom {
-    width: 100%;
-    text-align: left;
-    word-break: normal;
-    padding-right: 30px;
-}
-
-.sellers__card__text__bottom {
-    font-size: $fs-xs;
-    font-weight: $fw-regular;
-    color: $palette-black;
-}
-
-.sellers__heart,
-.sellers__bag {
-    font-size: get_rem(25);
-}
-.sellers__card__icons {
-    width: 100%;
-    display: flex;
-    justify-content: flex-start;
-    padding-left: get_rem(12);
-    gap: get_rem(20);
-    margin-top: get_rem(130);
-
-    align-items: center;
 }
 
 .sellers__button {
@@ -187,44 +95,19 @@
     background: $palette-orange;
 }
 
-.sellers__card__wrapper {
-    display: flex;
-    justify-content: center;
-}
-
-.sellers__stars {
-    @include flex-center;
-    justify-content: flex-start;
-    font-size: get_rem(15);
-    gap: get_rem(6);
-    margin-bottom: get_rem(5);
-}
-
-.sellers__star {
-    color: $palette-orange;
+.sellers__heart,
+.sellers__bag {
+    font-size: get_rem(25) !important;
 }
 
 @include tablet {
     .sellers {
         padding-bottom: get_rem(48);
     }
-    .sellers__card {
-        flex-direction: row;
-        gap: get_rem(80);
-        height: get_rem(280);
-        min-height: 0;
+    .card {
+        min-height: get_rem(280) !important;
     }
 
-    .sellers__card__left {
-        flex: 1;
-    }
-    .sellers__card__right {
-        gap: get_rem(10);
-    }
-
-    .sellers__card__icons {
-        margin-top: get_rem(90);
-    }
     .swiper {
         &__pagination__wrapper {
             position: relative;
@@ -267,6 +150,9 @@
     .sellers {
         padding-bottom: get_rem(120);
     }
+    .card {
+        min-height: get_rem(310) !important;
+    }
     .sellers__bottom {
         display: flex;
         flex-direction: row;
@@ -275,34 +161,6 @@
         gap: get_rem(40);
         width: 100%;
         padding-top: get_rem(30);
-    }
-
-    .sellers__card {
-        width: get_rem(588);
-        height: get_rem(280);
-        display: flex;
-        min-height: 0;
-        flex-direction: row;
-        gap: get_rem(50);
-        padding: get_rem(20);
-    }
-
-    .sellers__card__left {
-        width: get_rem(300);
-        gap: get_rem(5);
-    }
-
-    .sellers__card__right {
-        gap: get_rem(30);
-        img {
-            width: get_rem(161);
-            height: get_rem(166);
-            flex-shrink: 0;
-            object-fit: contain;
-        }
-    }
-    .sellers__card__icons {
-        margin-top: get_rem(80);
     }
 
     .sellers__button {
@@ -335,10 +193,8 @@
             right: get_rem(-30) !important;
         }
     }
+
     .sellers__top p {
-        font-size: get_rem(32);
-    }
-    .sellers__card__text__top {
         font-size: get_rem(32);
     }
 }

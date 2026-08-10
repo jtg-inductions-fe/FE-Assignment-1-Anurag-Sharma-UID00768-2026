@@ -51,9 +51,11 @@
         gap: get_rem(10);
     }
 
-    &__text__mid {
-        overflow-wrap: break-word;
-        text-align: left;
+    &__text {
+        &__mid {
+            overflow-wrap: break-word;
+            text-align: left;
+        }
     }
 
     &__icons {
@@ -65,6 +67,17 @@
         margin-top: get_rem(5);
         align-items: center;
     }
+
+    &__stars {
+        @include flex-center;
+        justify-content: flex-start;
+        font-size: get_rem(20);
+        gap: get_rem(6);
+    }
+
+    &__star {
+        color: $palette-orange;
+    }
 }
 
 @include tablet {
@@ -74,9 +87,11 @@
         min-height: 0;
         height: get_rem(266);
 
-        &__content__wrapper {
-            height: get_rem(115);
-            gap: get_rem(8);
+        &__content {
+            &__wrapper {
+                height: get_rem(115);
+                gap: get_rem(8);
+            }
         }
 
         &__right {
@@ -102,9 +117,11 @@
         gap: get_rem(100);
         padding: get_rem(20);
 
-        &__content__wrapper {
-            height: get_rem(120);
-            gap: get_rem(8);
+        &__content {
+            &__wrapper {
+                height: get_rem(120);
+                gap: get_rem(8);
+            }
         }
 
         &__left {
