@@ -43,22 +43,20 @@
     padding-top: get_rem(40);
     max-width: get_rem(725);
 }
-
-.swiper-pagination {
-    position: absolute !important;
-    top: get_rem(4) !important;
-    bottom: auto !important;
+.swiper__pagination__wrapper {
+    position: relative;
+    padding: 20px;
 }
-
 .swiper-wrapper {
     position: relative;
     height: 100%;
-    margin-top: get_rem(35);
+    margin-top: get_rem(10);
     overflow-x: visible !important;
 }
 
 .swiper-slide {
     height: 100%;
+    height: get_rem(250) !important;
     width: get_rem(180) !important;
     box-shadow: get_rem(2) get_rem(4) get_rem(8) 0 rgba(0, 0, 0, 0.15) img {
         width: 100%;
@@ -190,7 +188,6 @@
 }
 
 .sellers__card__wrapper {
-    width: 100%;
     display: flex;
     justify-content: center;
 }
@@ -228,19 +225,39 @@
     .sellers__card__icons {
         margin-top: get_rem(90);
     }
+    .swiper {
+        &__pagination__wrapper {
+            position: relative;
+            padding: 20px;
+        }
 
-    .swiper-button-prev {
-        display: flex !important;
-        position: absolute !important;
-        top: get_rem(140) !important;
-        left: get_rem(-20) !important;
+        &-pagination {
+            margin-top: get_rem(25);
+        }
+
+        &-wrapper {
+            margin-top: get_rem(60);
+        }
+
+        &-slide {
+            height: get_rem(260) !important;
+        }
+
+        &-button-prev {
+            display: flex !important;
+            position: absolute !important;
+            top: get_rem(220) !important;
+            left: get_rem(-30) !important;
+        }
+
+        &-button-next {
+            display: flex !important;
+            position: absolute !important;
+            top: get_rem(220) !important;
+            right: get_rem(-30) !important;
+        }
     }
-    .swiper-button-next {
-        display: flex !important;
-        position: absolute !important;
-        top: get_rem(140) !important;
-        right: get_rem(-30) !important;
-    }
+
     .sellers__top p {
         font-size: $fs-xl;
     }
@@ -259,18 +276,7 @@
         width: 100%;
         padding-top: get_rem(30);
     }
-    .swiper__cover {
-        width: get_rem(600);
-        margin: 0;
-    }
-    .swiper-wrapper {
-        margin-top: get_rem(60);
-    }
 
-    .sellers__card__wrapper {
-        width: auto;
-        transform: translateY(get_rem(25));
-    }
     .sellers__card {
         width: get_rem(588);
         height: get_rem(280);
@@ -303,17 +309,31 @@
         padding: get_rem(10) get_rem(35);
     }
 
-    .swiper-button-prev {
-        display: flex !important;
-        position: absolute !important;
-        top: get_rem(170) !important;
-        left: get_rem(-20) !important;
-    }
-    .swiper-button-next {
-        display: flex !important;
-        position: absolute !important;
-        top: get_rem(170) !important;
-        right: get_rem(-30) !important;
+    .swiper {
+        &__cover {
+            width: get_rem(600);
+            margin: 0;
+            height: 100%;
+        }
+
+        &-wrapper {
+            margin-top: get_rem(20);
+            padding-bottom: get_rem(50);
+        }
+
+        &-button-prev {
+            display: flex !important;
+            position: absolute !important;
+            top: get_rem(190) !important;
+            left: get_rem(-35) !important;
+        }
+
+        &-button-next {
+            display: flex !important;
+            position: absolute !important;
+            top: get_rem(190) !important;
+            right: get_rem(-30) !important;
+        }
     }
     .sellers__top p {
         font-size: get_rem(32);

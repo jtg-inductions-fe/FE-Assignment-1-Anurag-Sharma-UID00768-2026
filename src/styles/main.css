@@ -892,21 +892,21 @@ caption {
   max-width: 45.3125rem;
 }
 
-.swiper-pagination {
-  position: absolute !important;
-  top: 0.25rem !important;
-  bottom: auto !important;
+.swiper__pagination__wrapper {
+  position: relative;
+  padding: 20px;
 }
 
 .swiper-wrapper {
   position: relative;
   height: 100%;
-  margin-top: 2.1875rem;
+  margin-top: 0.625rem;
   overflow-x: visible !important;
 }
 
 .swiper-slide {
   height: 100%;
+  height: 15.625rem !important;
   width: 11.25rem !important;
   box-shadow: 0.125rem 0.25rem 0.5rem 0 rgba(0, 0, 0, 0.15) img;
   box-shadow-width: 100%;
@@ -1046,7 +1046,6 @@ caption {
 }
 
 .sellers__card__wrapper {
-  width: 100%;
   display: flex;
   justify-content: center;
 }
@@ -1084,16 +1083,29 @@ caption {
   .sellers__card__icons {
     margin-top: 5.625rem;
   }
+  .swiper__pagination__wrapper {
+    position: relative;
+    padding: 20px;
+  }
+  .swiper-pagination {
+    margin-top: 1.5625rem;
+  }
+  .swiper-wrapper {
+    margin-top: 3.75rem;
+  }
+  .swiper-slide {
+    height: 16.25rem !important;
+  }
   .swiper-button-prev {
     display: flex !important;
     position: absolute !important;
-    top: 8.75rem !important;
-    left: -1.25rem !important;
+    top: 13.75rem !important;
+    left: -1.875rem !important;
   }
   .swiper-button-next {
     display: flex !important;
     position: absolute !important;
-    top: 8.75rem !important;
+    top: 13.75rem !important;
     right: -1.875rem !important;
   }
   .sellers__top p {
@@ -1112,17 +1124,6 @@ caption {
     gap: 2.5rem;
     width: 100%;
     padding-top: 1.875rem;
-  }
-  .swiper__cover {
-    width: 37.5rem;
-    margin: 0;
-  }
-  .swiper-wrapper {
-    margin-top: 3.75rem;
-  }
-  .sellers__card__wrapper {
-    width: auto;
-    transform: translateY(1.5625rem);
   }
   .sellers__card {
     width: 36.75rem;
@@ -1153,16 +1154,25 @@ caption {
   .sellers__button {
     padding: 0.625rem 2.1875rem;
   }
+  .swiper__cover {
+    width: 37.5rem;
+    margin: 0;
+    height: 100%;
+  }
+  .swiper-wrapper {
+    margin-top: 1.25rem;
+    padding-bottom: 3.125rem;
+  }
   .swiper-button-prev {
     display: flex !important;
     position: absolute !important;
-    top: 10.625rem !important;
-    left: -1.25rem !important;
+    top: 11.875rem !important;
+    left: -2.1875rem !important;
   }
   .swiper-button-next {
     display: flex !important;
     position: absolute !important;
-    top: 10.625rem !important;
+    top: 11.875rem !important;
     right: -1.875rem !important;
   }
   .sellers__top p {
