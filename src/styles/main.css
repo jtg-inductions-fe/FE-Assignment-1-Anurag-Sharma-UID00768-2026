@@ -881,7 +881,6 @@ caption {
 
 .swiper__cover {
   position: relative;
-  height: 15.625rem;
   width: min(100%, 45.3125rem);
   margin: 0 auto;
 }
@@ -1117,7 +1116,6 @@ caption {
   .swiper__cover {
     width: 37.5rem;
     margin: 0;
-    height: 19.375rem;
   }
   .swiper-wrapper {
     margin-top: 3.75rem;

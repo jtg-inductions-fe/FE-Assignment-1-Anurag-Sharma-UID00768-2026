@@ -33,7 +33,6 @@
 }
 .swiper__cover {
     position: relative;
-    height: get_rem(250);
     width: min(100%, get_rem(725));
     margin: 0 auto;
 }
@@ -263,7 +262,6 @@
     .swiper__cover {
         width: get_rem(600);
         margin: 0;
-        height: get_rem(310);
     }
     .swiper-wrapper {
         margin-top: get_rem(60);
