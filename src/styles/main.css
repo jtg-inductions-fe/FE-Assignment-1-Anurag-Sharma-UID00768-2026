@@ -685,7 +685,6 @@ caption {
 }
 .swiper__cover {
   position: relative;
-  height: 18.75rem;
   width: min(100%, 45.3125rem);
   margin: 0 auto;
 }
@@ -758,7 +757,7 @@ caption {
        object-fit: contain;
   }
   .release__card__icons {
-    margin-top: -0.3125rem;
+    margin-bottom: 0.625rem;
   }
   .swiper__pagination__wrapper {
     position: relative;
