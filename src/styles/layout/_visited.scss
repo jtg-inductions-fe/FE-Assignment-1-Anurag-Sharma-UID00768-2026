@@ -14,7 +14,7 @@
         text-transform: uppercase;
         text-align: center;
 
-        p {
+        &-text {
             font-size: $fs-sm;
             font-weight: $fw-light;
             color: $palette-white;
@@ -29,8 +29,7 @@
         max-width: get_rem(900);
         margin: 0 auto;
 
-        &__tab {
-            // flex: 1 1 calc(25% - get_rem(16));
+        &-tab {
             background: $palette-orange;
             color: $palette-white;
             font-size: $fs-xs;
@@ -49,14 +48,15 @@
         gap: get_rem(40);
 
         &__top {
-            p {
+            &-text {
                 font-size: get_rem(32);
             }
         }
 
         &__bottom {
             gap: get_rem(24);
-            &__tab {
+
+            &-tab {
                 font-size: $fs-lg;
                 padding: get_rem(24) get_rem(32);
 
@@ -95,7 +95,7 @@
         gap: get_rem(40);
 
         &__top {
-            p {
+            &-text {
                 font-size: get_rem(32);
             }
         }
@@ -103,7 +103,7 @@
         &__bottom {
             gap: get_rem(24);
 
-            &__tab {
+            &-tab {
                 font-size: $fs-lg;
                 padding: get_rem(24) get_rem(32);
 

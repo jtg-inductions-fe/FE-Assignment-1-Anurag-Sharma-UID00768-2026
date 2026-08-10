@@ -1,38 +1,37 @@
 <!doctype html>
 <html lang="en">
     <head>
-        <title>Title</title>
+        <title>Alura Books</title>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
             href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
             rel="stylesheet"
         />
-        <link rel="stylesheet" href="./src/styles/main.css" />
+        <link rel="stylesheet" href="./src/styles/main.scss" />
     </head>
     <body>
         <header class="header">
             <nav class="navbar">
                 <div class="navbar__left">
-                    <button class="navbar__menu">
+                    <button class="navbar__menu" aria-label="Toggle menu">
                         <i class="icon-hamburger"></i>
                     </button>
-
                     <a href="#" class="navbar__logo">
-                        <img src="/public//assets/images/Logo.webp" alt="" />
+                        <img
+                            src="/public/assets/images/Logo.webp"
+                            alt="Alura Books Logo"
+                        />
                         <div>
                             <span class="alura">Alura</span
                             ><span class="books">Books</span>
                         </div>
                     </a>
-
                     <ul class="navbar__links">
                         <li class="navbar__item navbar__item--dropdown">
                             <a href="#" class="navbar__link"> Categories </a>
-
                             <ul class="dropdown">
                                 <li class="dropdown__item">
                                     <a href="#">Programming</a>
@@ -51,56 +50,55 @@
                                 </li>
                             </ul>
                         </li>
-
                         <li class="navbar__item">
                             <a href="#" class="navbar__link">Favourites</a>
                         </li>
-
                         <li class="navbar__item">
                             <a href="#" class="navbar__link">My Bookshelf</a>
                         </li>
                     </ul>
                 </div>
-
                 <div class="navbar__actions">
-                    <a href="#" class="navbar__action navbar__action-fav">
+                    <a
+                        href="#"
+                        class="navbar__action navbar__action-fav"
+                        aria-label="Favourites"
+                    >
                         <i class="icon-heart"></i>
                     </a>
-
                     <a href="#" class="navbar__action">
-                        <span class="icon-nav-right"
-                            ><i class="icon-bag"></i
-                        ></span>
+                        <span class="icon-nav-right">
+                            <i class="icon-bag"></i>
+                        </span>
                         <span>My Bag</span>
                     </a>
-
                     <a href="#" class="navbar__action">
-                        <span class="icon-nav-right"
-                            ><i class="icon-profile"></i
-                        ></span>
+                        <span class="icon-nav-right">
+                            <i class="icon-profile"></i>
+                        </span>
                         <span>My Profile</span>
                     </a>
                 </div>
-
                 <div class="mobile__menu">
                     <ul class="mobile__menu__links">
                         <li class="mobile__nav__link mobile__nav__link--active">
-                            categories
+                            Categories
                         </li>
-                        <li class="mobile__nav__link">programming</li>
-                        <li class="mobile__nav__link">front-end</li>
-                        <li class="mobile__nav__link">infrastructure</li>
-                        <li class="mobile__nav__link">business</li>
-                        <li class="mobile__nav__link">Design &amp;UX</li>
+                        <li class="mobile__nav__link">Programming</li>
+                        <li class="mobile__nav__link">Front-End</li>
+                        <li class="mobile__nav__link">Infrastructure</li>
+                        <li class="mobile__nav__link">Business</li>
+                        <li class="mobile__nav__link">Design &amp; UX</li>
                     </ul>
                 </div>
             </nav>
         </header>
+
         <section class="hero">
             <div class="hero__text">
-                <p class="hero__top__heading">
+                <h2 class="hero__top__heading">
                     Do you already know where to start?
-                </p>
+                </h2>
                 <div class="hero__top__text">
                     <p class="text">Find what you need for your</p>
                     <p class="text">development on our bookshelf!</p>
@@ -114,169 +112,159 @@
                     <input
                         type="text"
                         class="hero__search__input"
-                        placeholder="What will you next read be?"
+                        placeholder="What will your next read be?"
                     />
                 </div>
             </div>
         </section>
-
         <section class="release">
             <div class="release__top">
-                <p>Latest Releases</p>
+                <h2 class="section-title">Latest Releases</h2>
             </div>
             <div class="release__bottom">
                 <div class="swiper__cover">
                     <div class="swiper-button-prev"></div>
                     <div class="swiper-button-next"></div>
-
                     <div class="swiper">
-                        <div class="swiper-pagination"></div>
+                        <div class="swiper__pagination__wrapper">
+                            <div class="swiper-pagination"></div>
+                        </div>
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
                                 <img
                                     src="/public/assets/images/book-design.webp"
-                                    alt=""
+                                    alt="Design book cover"
                                 />
                             </div>
                             <div class="swiper-slide">
                                 <img
                                     src="/public/assets/images/book-javascript.webp"
-                                    alt=""
+                                    alt="JavaScript book cover"
                                 />
                             </div>
                             <div class="swiper-slide">
                                 <img
                                     src="/public/assets/images/book-apache.webp"
-                                    alt=""
+                                    alt="Apache book cover"
                                 />
                             </div>
                             <div class="swiper-slide">
                                 <img
                                     src="/public/assets/images/book-accessibilidade.webp"
-                                    alt=""
+                                    alt="Accessibility book cover"
                                 />
                             </div>
                             <div class="swiper-slide">
                                 <img
                                     src="/public/assets/images/book-angular.webp"
-                                    alt=""
+                                    alt="Angular book cover"
                                 />
                             </div>
                             <div class="swiper-slide">
                                 <img
                                     src="/public/assets/images/book-arquietura.webp"
-                                    alt=""
+                                    alt="Architecture book cover"
                                 />
                             </div>
                             <div class="swiper-slide">
                                 <img
                                     src="/public/assets/images/book-design.webp"
-                                    alt=""
+                                    alt="Design book cover"
                                 />
                             </div>
                             <div class="swiper-slide">
                                 <img
                                     src="/public/assets/images/book-gestao.webp"
-                                    alt=""
+                                    alt="Management book cover"
                                 />
                             </div>
                             <div class="swiper-slide">
                                 <img
                                     src="/public/assets/images/book-guia.webp"
-                                    alt=""
+                                    alt="Guide book cover"
                                 />
                             </div>
                             <div class="swiper-slide">
                                 <img
                                     src="/public/assets/images/book-metricas.webp"
-                                    alt=""
+                                    alt="Metrics book cover"
                                 />
                             </div>
                             <div class="swiper-slide">
                                 <img
                                     src="/public/assets/images/book-nodejs.webp"
-                                    alt=""
+                                    alt="Node.js book cover"
                                 />
                             </div>
                             <div class="swiper-slide">
                                 <img
                                     src="/public/assets/images/book-react.webp"
-                                    alt=""
+                                    alt="React book cover"
                                 />
                             </div>
                             <div class="swiper-slide">
                                 <img
                                     src="/public/assets/images/book-startup.webp"
-                                    alt=""
+                                    alt="Startup book cover"
                                 />
                             </div>
                             <div class="swiper-slide">
                                 <img
                                     src="/public/assets/images/book-tuning.webp"
-                                    alt=""
+                                    alt="Tuning book cover"
                                 />
                             </div>
                             <div class="swiper-slide">
                                 <img
                                     src="/public/assets/images/book-ux.webp"
-                                    alt=""
+                                    alt="UX book cover"
                                 />
                             </div>
                             <div class="swiper-slide">
                                 <img
                                     src="/public/assets/images/book-mean.webp"
-                                    alt=""
+                                    alt="MEAN stack book cover"
                                 />
                             </div>
                             <div class="swiper-slide">
                                 <img
                                     src="/public/assets/images/book-construct.webp"
-                                    alt=""
+                                    alt="Construct book cover"
                                 />
                             </div>
                             <div class="swiper-slide">
                                 <img
                                     src="/public/assets/images/book-portugal.webp"
-                                    alt=""
+                                    alt="Portugal book cover"
                                 />
                             </div>
                         </div>
                     </div>
                 </div>
-
-                <div class="release__card__wrapper">
-                    <div class="release__card">
-                        <div class="release__card__left">
-                            <div class="release__card__content_wrapper">
-                                <div class="release__card__content__top">
-                                    <p class="release__card__text__top">
-                                        You might also be interested in...
-                                    </p>
-                                </div>
-                                <div class="release__card__content__mid">
-                                    <p class="release__card__text__mid">
-                                        Angular 11 and Firebase
-                                    </p>
-                                </div>
-
-                                <div class="release__card__content__bottom">
-                                    <p class="release__card__text__bottom">
-                                        Building on application integrated with
-                                        the Google Platform.
-                                    </p>
-                                </div>
+                <div class="card__wrapper">
+                    <div class="card">
+                        <div class="card__left">
+                            <div class="card__content-wrapper">
+                                <p class="card__text__top card-subtitle">
+                                    You might also be interested in...
+                                </p>
+                                <h3 class="card__text__mid card-title">
+                                    Angular 11 and Firebase
+                                </h3>
+                                <p class="card__text__bottom card-description">
+                                    Building on application integrated with the
+                                    Google Platform.
+                                </p>
                             </div>
-
-                            <div class="release__card__icons">
+                            <div class="card__icons">
                                 <i class="icon-heart release__heart"></i>
                                 <i class="icon-bag release__bag"></i>
                             </div>
                         </div>
-
-                        <div class="release__card__right">
+                        <div class="card__right">
                             <img
                                 src="/public/assets/images/card-angular.webp"
-                                alt=""
+                                alt="Angular 11 and Firebase book cover"
                             />
                             <button class="release__button">Learn more</button>
                         </div>
@@ -295,161 +283,154 @@
                     <div class="swiper-button-next"></div>
 
                     <div class="swiper">
-                        <div class="swiper-pagination"></div>
+                        <div class="swiper__pagination__wrapper">
+                            <div class="swiper-pagination"></div>
+                        </div>
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
                                 <img
                                     src="/public/assets/images/book-design.webp"
-                                    alt=""
+                                    alt="Design book cover"
                                 />
                             </div>
                             <div class="swiper-slide">
                                 <img
                                     src="/public/assets/images/book-javascript.webp"
-                                    alt=""
+                                    alt="JavaScript book cover"
                                 />
                             </div>
                             <div class="swiper-slide">
                                 <img
-                                    src="/public/assets/images/book-kafka-spring.webp"
-                                    alt=""
+                                    src="/public/assets/images/book-apache.webp"
+                                    alt="Apache book cover"
                                 />
                             </div>
                             <div class="swiper-slide">
                                 <img
                                     src="/public/assets/images/book-accessibilidade.webp"
-                                    alt=""
+                                    alt="Accessibility book cover"
                                 />
                             </div>
                             <div class="swiper-slide">
                                 <img
                                     src="/public/assets/images/book-angular.webp"
-                                    alt=""
+                                    alt="Angular book cover"
                                 />
                             </div>
                             <div class="swiper-slide">
                                 <img
                                     src="/public/assets/images/book-arquietura.webp"
-                                    alt=""
+                                    alt="Architecture book cover"
                                 />
                             </div>
                             <div class="swiper-slide">
                                 <img
                                     src="/public/assets/images/book-design.webp"
-                                    alt=""
+                                    alt="Design book cover"
                                 />
                             </div>
                             <div class="swiper-slide">
                                 <img
                                     src="/public/assets/images/book-gestao.webp"
-                                    alt=""
+                                    alt="Management book cover"
                                 />
                             </div>
                             <div class="swiper-slide">
                                 <img
                                     src="/public/assets/images/book-guia.webp"
-                                    alt=""
+                                    alt="Guide book cover"
                                 />
                             </div>
                             <div class="swiper-slide">
                                 <img
                                     src="/public/assets/images/book-metricas.webp"
-                                    alt=""
+                                    alt="Metrics book cover"
                                 />
                             </div>
                             <div class="swiper-slide">
                                 <img
                                     src="/public/assets/images/book-nodejs.webp"
-                                    alt=""
+                                    alt="Node.js book cover"
                                 />
                             </div>
                             <div class="swiper-slide">
                                 <img
                                     src="/public/assets/images/book-react.webp"
-                                    alt=""
+                                    alt="React book cover"
                                 />
                             </div>
                             <div class="swiper-slide">
                                 <img
                                     src="/public/assets/images/book-startup.webp"
-                                    alt=""
+                                    alt="Startup book cover"
                                 />
                             </div>
                             <div class="swiper-slide">
                                 <img
                                     src="/public/assets/images/book-tuning.webp"
-                                    alt=""
+                                    alt="Tuning book cover"
                                 />
                             </div>
                             <div class="swiper-slide">
                                 <img
                                     src="/public/assets/images/book-ux.webp"
-                                    alt=""
+                                    alt="UX book cover"
                                 />
                             </div>
                             <div class="swiper-slide">
                                 <img
                                     src="/public/assets/images/book-mean.webp"
-                                    alt=""
+                                    alt="MEAN stack book cover"
                                 />
                             </div>
                             <div class="swiper-slide">
                                 <img
                                     src="/public/assets/images/book-construct.webp"
-                                    alt=""
+                                    alt="Construct book cover"
                                 />
                             </div>
                             <div class="swiper-slide">
                                 <img
                                     src="/public/assets/images/book-portugal.webp"
-                                    alt=""
+                                    alt="Portugal book cover"
                                 />
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="sellers__card__wrapper">
-                    <div class="sellers__card">
-                        <div class="sellers__card__left">
-                            <div class="sellers__card__content__top">
-                                <div class="sellers__stars">
-                                    <span class="sellers__star">&#9733;</span>
-                                    <span class="sellers__star">&#9733;</span>
-                                    <span class="sellers__star">&#9733;</span>
-                                    <span class="sellers__star">&#9733;</span>
-                                    <span class="sellers__star">&#9733;</span>
-                                </div>
-
-                                <p class="sellers__card__text__top">
-                                    Author of the Month
-                                </p>
+                <div class="card__wrapper">
+                    <div class="card">
+                        <div class="card__left">
+                            <div class="card__stars">
+                                <span class="card__star">&#9733;</span>
+                                <span class="card__star">&#9733;</span>
+                                <span class="card__star">&#9733;</span>
+                                <span class="card__star">&#9733;</span>
+                                <span class="card__star">&#9733;</span>
                             </div>
-                            <div class="sellers__card__content__wrapper">
-                                <div class="sellers__card__content__mid">
-                                    <p class="sellers__card__text__mid">
-                                        Juliana Agarikov
-                                    </p>
-                                </div>
+                            <p class="card__text__top card-subtitle">
+                                Author of the Month
+                            </p>
+                            <p class="card__text__mid card-title">
+                                Juliana Agarikov
+                            </p>
 
-                                <div class="sellers__card__content__bottom">
-                                    <p class="sellers__card__text__bottom">
-                                        A systems analyst and writer, Juliana
-                                        specializes in front-end development.
-                                    </p>
-                                </div>
-                            </div>
+                            <p class="card__text__bottom card-description">
+                                A systems analyst and writer, Juliana
+                                specializes in front-end development.
+                            </p>
 
-                            <div class="sellers__card__icons">
+                            <div class="card__icons">
                                 <i class="icon-heart sellers__heart"></i>
                                 <i class="icon-bag sellers__bag"></i>
                             </div>
                         </div>
 
-                        <div class="sellers__card__right">
+                        <div class="card__right">
                             <img
                                 src="/public/assets/images/card-author.webp"
-                                alt=""
+                                alt="Author Image"
                             />
                             <button class="sellers__button">Learn more</button>
                         </div>
@@ -460,17 +441,17 @@
 
         <section class="visited">
             <div class="visited__top">
-                <p class="visited__top__text">recently visited topics</p>
+                <h2 class="visited__top-text">recently visited topics</h2>
             </div>
             <div class="visited__bottom">
-                <button class="visited__bottom__tab">Android</button>
-                <button class="visited__bottom__tab">Marketting Digital</button>
-                <button class="visited__bottom__tab">Agile</button>
-                <button class="visited__bottom__tab">Startups</button>
-                <button class="visited__bottom__tab">HTML & CSS</button>
-                <button class="visited__bottom__tab">Python</button>
-                <button class="visited__bottom__tab">OO</button>
-                <button class="visited__bottom__tab">Java</button>
+                <button class="visited__bottom-tab">Android</button>
+                <button class="visited__bottom-tab">Marketting Digital</button>
+                <button class="visited__bottom-tab">Agile</button>
+                <button class="visited__bottom-tab">Startups</button>
+                <button class="visited__bottom-tab">HTML & CSS</button>
+                <button class="visited__bottom-tab">Python</button>
+                <button class="visited__bottom-tab">OO</button>
+                <button class="visited__bottom-tab">Java</button>
             </div>
         </section>
 
