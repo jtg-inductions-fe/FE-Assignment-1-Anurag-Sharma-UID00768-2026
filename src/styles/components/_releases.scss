@@ -12,6 +12,7 @@
     &__bottom {
         position: relative;
         width: 100%;
+        padding: get_rem(5) 0;
     }
 
     &__top {
@@ -57,7 +58,6 @@
         border-radius: get_rem(10);
 
         &__wrapper {
-            width: 100%;
             display: flex;
             justify-content: center;
         }
@@ -65,7 +65,6 @@
         &__left {
             display: flex;
             flex-direction: column;
-            // justify-content: center;
             align-items: center;
             gap: get_rem(35);
             min-width: 0;
@@ -284,7 +283,7 @@
             align-items: center;
             gap: get_rem(40);
             width: 100%;
-            padding-top: get_rem(30);
+            padding: get_rem(46) 0;
         }
 
         &__top {
@@ -302,10 +301,6 @@
             gap: get_rem(100);
             padding: get_rem(20);
 
-            &__wrapper {
-                width: auto;
-                transform: translateY(get_rem(25));
-            }
             &__content__wrapper {
                 height: get_rem(120);
                 gap: get_rem(8);
@@ -346,6 +341,7 @@
 
         &-wrapper {
             margin-top: get_rem(20);
+            padding-bottom: get_rem(50);
         }
 
         &-button-prev {

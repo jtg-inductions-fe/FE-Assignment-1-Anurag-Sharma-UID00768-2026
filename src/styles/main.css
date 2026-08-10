@@ -557,6 +557,7 @@ caption {
 .release__bottom {
   position: relative;
   width: 100%;
+  padding: 0.3125rem 0;
 }
 .release__top {
   padding-top: 1.125rem;
@@ -598,7 +599,6 @@ caption {
   border-radius: 0.625rem;
 }
 .release__card__wrapper {
-  width: 100%;
   display: flex;
   justify-content: center;
 }
@@ -789,7 +789,7 @@ caption {
     align-items: center;
     gap: 2.5rem;
     width: 100%;
-    padding-top: 1.875rem;
+    padding: 2.875rem 0;
   }
   .release__top p {
     font-size: 2rem;
@@ -802,10 +802,6 @@ caption {
     flex-direction: row;
     gap: 6.25rem;
     padding: 1.25rem;
-  }
-  .release__card__wrapper {
-    width: auto;
-    transform: translateY(1.5625rem);
   }
   .release__card__content__wrapper {
     height: 7.5rem;
@@ -838,6 +834,7 @@ caption {
   }
   .swiper-wrapper {
     margin-top: 1.25rem;
+    padding-bottom: 3.125rem;
   }
   .swiper-button-prev {
     display: flex !important;
