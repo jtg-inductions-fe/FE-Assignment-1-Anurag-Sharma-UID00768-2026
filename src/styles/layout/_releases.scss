@@ -32,7 +32,7 @@
 
     &__heart,
     &__bag {
-        font-size: get_rem(25);
+        font-size: get_rem(25) !important;
     }
 
     &__button {
@@ -42,104 +42,6 @@
         font-weight: $fw-bold;
         color: $palette-white;
         background: $palette-orange;
-    }
-
-    &__card {
-        @include flex-between;
-        align-items: stretch;
-        width: 100%;
-        min-height: get_rem(295);
-        max-width: get_rem(588);
-        background-color: $palette-white;
-        box-shadow: 0 get_rem(10) get_rem(3) get_rem(-2) rgba(0, 0, 0, 0.15);
-        margin: get_rem(20) get_rem(15);
-        gap: get_rem(30);
-        padding: get_rem(15) get_rem(10);
-        border-radius: get_rem(10);
-
-        &__wrapper {
-            display: flex;
-            justify-content: center;
-        }
-
-        &__left {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: get_rem(35);
-            min-width: 0;
-        }
-
-        &__right {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            flex-shrink: 0;
-            gap: get_rem(35);
-
-            img {
-                width: get_rem(188);
-                height: get_rem(188);
-                flex-shrink: 0;
-                object-fit: contain;
-            }
-        }
-
-        &__content-wrapper {
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-start;
-            align-items: flex-start;
-            gap: get_rem(10);
-        }
-
-        &__content__top {
-            width: 100%;
-            text-align: left;
-        }
-
-        &__content__mid {
-            width: 100%;
-            text-align: left;
-            word-break: normal;
-        }
-
-        &__content__bottom {
-            width: 100%;
-            text-align: left;
-            word-break: normal;
-        }
-
-        &__text__top {
-            text-align: left;
-            color: $palette-orange;
-            font-size: $fs-sm;
-            font-weight: $fw-bold;
-        }
-
-        &__text__mid {
-            overflow-wrap: break-word;
-            text-align: left;
-            font-size: $fs-md;
-            font-weight: $fw-bold;
-            color: #002f52;
-        }
-
-        &__text__bottom {
-            font-size: $fs-xs;
-            font-weight: $fw-regular;
-            color: $palette-black;
-        }
-
-        &__icons {
-            width: 100%;
-            display: flex;
-            justify-content: flex-start;
-            padding-left: get_rem(12);
-            gap: get_rem(20);
-            margin-top: get_rem(40);
-            align-items: center;
-        }
     }
 }
 
@@ -209,29 +111,6 @@
                 font-size: $fs-xl;
             }
         }
-
-        &__card {
-            flex-direction: row;
-            gap: get_rem(80);
-            min-height: 0;
-            height: get_rem(266);
-
-            &__content__wrapper {
-                height: get_rem(115);
-                gap: get_rem(8);
-            }
-
-            &__right {
-                gap: get_rem(25);
-
-                img {
-                    width: get_rem(165);
-                    height: get_rem(165);
-                    flex-shrink: 0;
-                    object-fit: contain;
-                }
-            }
-        }
     }
 
     .swiper {
@@ -239,10 +118,6 @@
             position: relative;
             padding: 20px;
         }
-
-        // &__cover {
-        //     height: get_rem(360);
-        // }
 
         &-pagination {
             margin-top: get_rem(25);
@@ -289,45 +164,6 @@
         &__top {
             p {
                 font-size: get_rem(32);
-            }
-        }
-
-        &__card {
-            width: get_rem(588);
-            height: get_rem(270);
-            display: flex;
-            min-height: 0;
-            flex-direction: row;
-            gap: get_rem(100);
-            padding: get_rem(20);
-
-            &__content__wrapper {
-                height: get_rem(120);
-                gap: get_rem(8);
-            }
-
-            &__left {
-                width: get_rem(300);
-                gap: get_rem(5);
-            }
-
-            &__right {
-                gap: get_rem(35);
-
-                img {
-                    width: get_rem(150);
-                    height: get_rem(150);
-                    flex-shrink: 0;
-                    object-fit: contain;
-                }
-            }
-
-            &__text__top {
-                font-size: get_rem(32);
-            }
-
-            &__icons {
-                margin-top: get_rem(15);
             }
         }
     }

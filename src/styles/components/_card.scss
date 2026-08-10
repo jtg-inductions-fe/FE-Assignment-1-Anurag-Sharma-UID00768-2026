@@ -1,0 +1,131 @@
+@use '../abstracts/functions' as *;
+@use '../abstracts/mixins' as *;
+@use '../abstracts/variables' as *;
+
+.card {
+    @include flex-between;
+    align-items: stretch;
+    width: 100%;
+    min-height: get_rem(295);
+    max-width: get_rem(588);
+    background-color: $palette-white;
+    box-shadow: 0 get_rem(10) get_rem(3) get_rem(-2) rgba(0, 0, 0, 0.15);
+    margin: get_rem(20) get_rem(15);
+    gap: get_rem(30);
+    padding: get_rem(15) get_rem(10);
+    border-radius: get_rem(10);
+
+    &__wrapper {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__left {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        min-width: 0;
+        height: 100%;
+    }
+
+    &__right {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        flex-shrink: 0;
+
+        img {
+            width: get_rem(188);
+            height: get_rem(188);
+            flex-shrink: 0;
+            object-fit: contain;
+        }
+    }
+
+    &__content-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: get_rem(10);
+    }
+
+    &__text__mid {
+        overflow-wrap: break-word;
+        text-align: left;
+    }
+
+    &__icons {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        padding-left: get_rem(12);
+        gap: get_rem(20);
+        margin-top: get_rem(5);
+        align-items: center;
+    }
+}
+
+@include tablet {
+    .card {
+        flex-direction: row;
+        gap: get_rem(80);
+        min-height: 0;
+        height: get_rem(266);
+
+        &__content__wrapper {
+            height: get_rem(115);
+            gap: get_rem(8);
+        }
+
+        &__right {
+            gap: get_rem(25);
+
+            img {
+                width: get_rem(165);
+                height: get_rem(165);
+                flex-shrink: 0;
+                object-fit: contain;
+            }
+        }
+    }
+}
+
+@include desktop {
+    .card {
+        width: get_rem(588);
+        height: get_rem(270);
+        display: flex;
+        min-height: 0;
+        flex-direction: row;
+        gap: get_rem(100);
+        padding: get_rem(20);
+
+        &__content__wrapper {
+            height: get_rem(120);
+            gap: get_rem(8);
+        }
+
+        &__left {
+            width: get_rem(300);
+            gap: get_rem(5);
+        }
+
+        &__right {
+            gap: get_rem(35);
+
+            img {
+                width: get_rem(150);
+                height: get_rem(150);
+                flex-shrink: 0;
+                object-fit: contain;
+            }
+        }
+
+        &__icons {
+            margin-top: get_rem(15);
+            transform: none;
+        }
+    }
+}
