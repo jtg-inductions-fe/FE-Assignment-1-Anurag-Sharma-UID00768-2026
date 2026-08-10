@@ -9,8 +9,9 @@
 @use 'base/utilities';
 
 @use 'vendors/icons';
-@use 'components/navbar';
-@use 'components/search';
-@use 'components/releases.scss';
-@use 'components/best-sellers';
-@use 'components/visited';
+@use 'layout/releases.scss';
+@use 'components/card';
+@use 'layout/navbar';
+@use 'layout/search';
+@use 'layout/best-sellers';
+@use 'layout/visited';

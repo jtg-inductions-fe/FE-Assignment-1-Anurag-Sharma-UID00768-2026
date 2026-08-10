@@ -1,4 +1,6 @@
-@use '../abstracts//variables' as *;
+@use '../abstracts/variables' as *;
+@use '../abstracts/functions' as *;
+@use '../abstracts/mixins' as *;
 
 h1 {
     font-size: $fs-2xl;
@@ -55,4 +57,49 @@ caption {
     font-size: $fs-xs;
     font-weight: $fw-regular;
     text-align: center;
+}
+
+.card-title {
+    font-weight: $fw-bold;
+    color: $palette-dark-blue;
+    font-size: get_rem(18);
+
+    @include tablet {
+        font-size: get_rem(20);
+    }
+
+    @include desktop {
+        font-size: get_rem(22);
+    }
+}
+
+.section-title {
+    font-weight: $fw-bold;
+    color: $palette-orange;
+    text-transform: uppercase;
+    font-size: get_rem(18);
+
+    @include tablet {
+        font-size: get_rem(24);
+    }
+
+    @include desktop {
+        font-size: get_rem(32);
+    }
+}
+
+.card-subtitle {
+    font-weight: $fw-bold;
+    color: $palette-orange;
+    font-size: $fs-sm;
+
+    @include desktop {
+        font-size: get_rem(32);
+    }
+}
+
+.card-description {
+    font-weight: $fw-regular;
+    color: $palette-black;
+    font-size: $fs-xs;
 }
