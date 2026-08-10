@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
     <head>
-        <title>Title</title>
+        <title>Alura Books</title>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
@@ -17,12 +17,15 @@
         <header class="header">
             <nav class="navbar">
                 <div class="navbar__left">
-                    <button class="navbar__menu">
+                    <button class="navbar__menu" aria-label="Toggle menu">
                         <i class="icon-hamburger"></i>
                     </button>
 
                     <a href="#" class="navbar__logo">
-                        <img src="/public//assets/images/Logo.webp" alt="" />
+                        <img
+                            src="/public/assets/images/Logo.webp"
+                            alt="Alura Books Logo"
+                        />
                         <div>
                             <span class="alura">Alura</span
                             ><span class="books">Books</span>
@@ -63,21 +66,25 @@
                 </div>
 
                 <div class="navbar__actions">
-                    <a href="#" class="navbar__action navbar__action-fav">
+                    <a
+                        href="#"
+                        class="navbar__action navbar__action-fav"
+                        aria-label="Favourites"
+                    >
                         <i class="icon-heart"></i>
                     </a>
 
                     <a href="#" class="navbar__action">
-                        <span class="icon-nav-right"
-                            ><i class="icon-bag"></i
-                        ></span>
+                        <span class="icon-nav-right">
+                            <i class="icon-bag"></i>
+                        </span>
                         <span>My Bag</span>
                     </a>
 
                     <a href="#" class="navbar__action">
-                        <span class="icon-nav-right"
-                            ><i class="icon-profile"></i
-                        ></span>
+                        <span class="icon-nav-right">
+                            <i class="icon-profile"></i>
+                        </span>
                         <span>My Profile</span>
                     </a>
                 </div>
@@ -85,22 +92,23 @@
                 <div class="mobile__menu">
                     <ul class="mobile__menu__links">
                         <li class="mobile__nav__link mobile__nav__link--active">
-                            categories
+                            Categories
                         </li>
-                        <li class="mobile__nav__link">programming</li>
-                        <li class="mobile__nav__link">front-end</li>
-                        <li class="mobile__nav__link">infrastructure</li>
-                        <li class="mobile__nav__link">business</li>
-                        <li class="mobile__nav__link">Design &amp;UX</li>
+                        <li class="mobile__nav__link">Programming</li>
+                        <li class="mobile__nav__link">Front-End</li>
+                        <li class="mobile__nav__link">Infrastructure</li>
+                        <li class="mobile__nav__link">Business</li>
+                        <li class="mobile__nav__link">Design &amp; UX</li>
                     </ul>
                 </div>
             </nav>
         </header>
+
         <section class="hero">
             <div class="hero__text">
-                <p class="hero__top__heading">
+                <h2 class="hero__top__heading">
                     Do you already know where to start?
-                </p>
+                </h2>
                 <div class="hero__top__text">
                     <p class="text">Find what you need for your</p>
                     <p class="text">development on our bookshelf!</p>
@@ -114,7 +122,7 @@
                     <input
                         type="text"
                         class="hero__search__input"
-                        placeholder="What will you next read be?"
+                        placeholder="What will your next read be?"
                     />
                 </div>
             </div>

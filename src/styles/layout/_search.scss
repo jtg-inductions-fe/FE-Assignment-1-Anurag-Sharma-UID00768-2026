@@ -9,87 +9,86 @@
     gap: get_rem(30);
     background: $palette-dark-blue;
     color: $palette-white;
-}
 
-.hero__text {
-    @include flex-column;
-    gap: get_rem(10);
-    text-align: center;
-    @include flex-column;
-    gap: get_rem(15);
-}
-
-.hero__top__heading {
-    font-size: $fs-md;
-    font-weight: $fw-bold;
-}
-
-.text {
-    font-size: $fs-sm;
-    font-weight: $fw-medium;
-}
-
-.hero__top__text {
-    @include flex-column;
-    gap: get_rem(2);
-}
-
-.hero__search {
-    @include flex-center;
-    width: 100%;
-    padding: get_rem(8) get_rem(34);
-    border-radius: get_rem(30);
-    border: get_rem(1) solid $palette-white;
-    background: transparent;
-    max-width: get_rem(586);
-}
-.hero__search__icon {
-    margin-top: get_rem(8);
-    padding: get_rem(3);
-}
-
-.icon-search {
-    font-size: get_rem(20);
-}
-.hero__search__wrapper {
-    @include flex-center;
-    gap: get_rem(10);
-}
-.hero__search__input::placeholder {
-    color: white;
-    opacity: 1;
-    font-size: $fs-xs;
-    font-weight: $fw-regular;
-}
-
-.hero__search__input {
-    width: get_rem(220);
-    outline: none;
-    border: none;
-    background: transparent;
-    line-height: 1;
-}
-
-@include tablet {
-    .hero {
-        min-height: get_rem(375);
-        padding: get_rem(84) get_rem(24);
+    &__text {
+        @include flex-column;
+        gap: get_rem(15);
+        text-align: center;
     }
-    .hero__top__heading {
-        font-size: $fs-3xl;
+
+    &__top__heading {
+        font-size: $fs-md;
         font-weight: $fw-bold;
     }
-    .hero__top__text {
-        flex-direction: row;
-        gap: get_rem(4);
-    }
-    .hero__search__input::placeholder {
-        font-size: $fs-sm;
-    }
-}
 
-@include desktop {
-    .hero {
+    &__top__text {
+        @include flex-column;
+        gap: get_rem(2);
+
+        .text {
+            font-size: $fs-sm;
+            font-weight: $fw-medium;
+        }
+    }
+
+    &__search {
+        @include flex-center;
+        width: 100%;
+        max-width: get_rem(586);
+        padding: get_rem(8) get_rem(34);
+        border: get_rem(1) solid $palette-white;
+        border-radius: get_rem(30);
+        background: transparent;
+
+        &__wrapper {
+            @include flex-center;
+            gap: get_rem(10);
+        }
+
+        &__icon {
+            margin-top: get_rem(8);
+            padding: get_rem(3);
+
+            .icon-search {
+                font-size: get_rem(20);
+            }
+        }
+
+        &__input {
+            width: get_rem(220);
+            border: none;
+            outline: none;
+            background: transparent;
+            line-height: 1;
+
+            &::placeholder {
+                color: $palette-white;
+                font-size: $fs-xs;
+                font-weight: $fw-regular;
+                opacity: 1;
+            }
+        }
+    }
+
+    @include tablet {
+        min-height: get_rem(375);
+        padding: get_rem(84) get_rem(24);
+
+        .hero__top__heading {
+            font-size: $fs-3xl;
+        }
+
+        .hero__top__text {
+            flex-direction: row;
+            gap: get_rem(4);
+        }
+
+        .hero__search__input::placeholder {
+            font-size: $fs-sm;
+        }
+    }
+
+    @include desktop {
         min-height: get_rem(330);
         padding: get_rem(84) get_rem(360);
     }
