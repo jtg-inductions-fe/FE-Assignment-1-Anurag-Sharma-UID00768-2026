@@ -605,7 +605,6 @@ caption {
 .release__card__left {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   gap: 2.1875rem;
   min-width: 0;
@@ -835,6 +834,7 @@ caption {
   .swiper__cover {
     width: 37.5rem;
     margin: 0;
+    height: 100%;
   }
   .swiper-wrapper {
     margin-top: 1.25rem;
