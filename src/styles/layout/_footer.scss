@@ -101,7 +101,7 @@
         padding: get_rem(56) get_rem(24);
         gap: get_rem(106);
         height: 100%;
-        min-height: get_rem(500);
+        min-height: get_rem(550);
         width: 100%;
         display: flex;
         justify-content: space-evenly;
@@ -116,7 +116,7 @@
             display: block;
             @include flex-column;
             align-items: flex-start;
-            max-height: get_rem(480);
+            max-height: get_rem(520);
             gap: get_rem(25);
             border-left: 1px solid #858585;
             padding-left: get_rem(20);
