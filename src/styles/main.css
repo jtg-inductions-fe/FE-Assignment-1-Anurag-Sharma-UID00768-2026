@@ -1,3 +1,8 @@
+/* 
+ * converts a pixel value into a relative rem value based on a 16px base font size
+ * @param {Number} $pixels - The pixel value to convert to rem.
+ * @return {Number} - The equivalent rem value 
+*/
 *,
 *::before,
 *::after {
@@ -57,68 +62,59 @@ body {
   width: 100%;
 }
 
-h1,
-.heading-xl {
+h1 {
   font-size: 1.875rem;
   font-weight: 700;
   line-height: 1.2;
 }
 
-h2,
-.heading-lg {
+h2 {
   font-size: 1.625rem;
   font-weight: 700;
   line-height: 1.3;
 }
 
-h3,
-.heading-md {
+h3 {
   font-size: 1.5rem;
   font-weight: 700;
   line-height: 1.4;
 }
 
-h4,
-.heading-sm {
+h4 {
   font-size: 1.125rem;
   font-weight: 700;
   line-height: 1.4;
 }
 
-p,
-.text-md {
+p {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
 }
 
-small,
-.text-sm {
+small {
   font-size: 0.875rem;
   font-weight: 400;
   line-height: 1.5;
-}
-
-.fw-light {
-  font-weight: 300;
-}
-
-.fw-regular {
-  font-weight: 400;
-}
-
-.fw-medium {
-  font-weight: 500;
-}
-
-.fw-bold {
-  font-weight: 700;
 }
 
 .brand-logo {
   font-family: "josefin-sans", sans-serif;
   font-size: 1.5rem;
   font-weight: 700;
+}
+
+ul li,
+ol li {
+  font-size: 1.125rem;
+  font-style: none;
+  line-height: 1.5;
+}
+
+caption {
+  font-size: 0.875rem;
+  font-weight: 400;
+  text-align: center;
 }
 
 @font-face {
@@ -143,7 +139,7 @@ small,
 
 .icon-hamburger:before {
   content: "\e904";
-  color: #fff;
+  color: #002f52;
 }
 
 .icon-bag:before {
@@ -187,7 +183,7 @@ small,
   justify-content: center;
   align-self: stretch;
   width: 5rem;
-  background-color: rgb(8, 8, 86);
+  background-color: transparent;
   border: none;
   padding: 1.75rem;
   cursor: pointer;
@@ -204,7 +200,7 @@ small,
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 2.1875rem;
+  gap: 0.3125rem;
 }
 
 .navbar__logo {
@@ -264,8 +260,9 @@ small,
   font-size: 2rem;
 }
 
-.icon-heart {
+.navbar__action-fav {
   display: block;
+  margin-top: 0.625rem;
 }
 
 .icon-nav-right {
@@ -288,7 +285,13 @@ small,
 }
 
 .navbar__item:hover > .navbar__link {
-  background: #002f52;
+  background: linear-gradient(to right, #002f52, #326589);
+  color: #ffffff;
+}
+
+.navbar__link:hover,
+.navbar__link:focus-visible {
+  background: linear-gradient(to right, #002f52, #326589);
   color: #ffffff;
 }
 
@@ -302,11 +305,11 @@ small,
   padding: 0;
   margin: 0;
   list-style: none;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
   z-index: 100;
 }
 
-.navbar__item--dropdown:hover > .dropdown {
+.navbar__item--dropdown:hover > .dropdown,
+.navbar__item--dropdown:focus-within > .dropdown {
   display: block;
 }
 
@@ -317,11 +320,17 @@ small,
   text-decoration: none;
 }
 
-.dropdown__item:hover {
-  background: #002f52;
+.dropdown__item:hover > a,
+.dropdown__item:focus-within > a {
+  color: #ffffff;
 }
 
-.dropdown__item:hover a {
+.dropdown__item:hover,
+.dropdown__item:focus-within {
+  background: linear-gradient(to right, #002f52, #326589);
+}
+
+.dropdown__item:hover a .dropdown_item:focus-within a {
   color: #ffffff;
 }
 
@@ -334,6 +343,7 @@ small,
   top: 5rem;
   left: 0;
   display: none;
+  box-shadow: 0 0.25rem 0.625rem 0 rgba(0, 0, 0, 0.2509803922);
   background-color: #ffffff;
 }
 
@@ -359,7 +369,15 @@ small,
   display: block;
 }
 
-@media (min-width: 64rem) {
+.color-blue {
+  background: linear-gradient(to right, #002f52, #326589);
+}
+
+.color-white::before {
+  color: #ffffff;
+}
+
+@media (min-width: 1024px) {
   .navbar {
     padding: 0 2.5rem;
   }
@@ -381,11 +399,11 @@ small,
   .navbar__action span:not(.icon-nav-right) {
     display: none;
   }
-  .icon-heart {
+  .navbar__action-fav {
     display: block;
   }
 }
-@media (min-width: 108rem) {
+@media (min-width: 1728px) {
   .navbar {
     padding: 0 3.125rem;
   }
@@ -395,7 +413,7 @@ small,
   .navbar__action span:not(.icon-nav-right) {
     display: inline;
   }
-  .icon-heart {
+  .navbar__action-fav {
     display: none;
   }
 }/*# sourceMappingURL=main.css.map */

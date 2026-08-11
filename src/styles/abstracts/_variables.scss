@@ -26,15 +26,16 @@ $palette-white: #ffffff;
 $palette-black: #000000;
 $palette-dark-grey: #474646;
 $palette-light-bg: #ebecee;
+$text-color: #1c1c1c;
 
 // Primary Colors
 $color-bg-main: $palette-light-bg;
 $color-text-main: $palette-black;
 
 // Breakpoints
-$breakpoint-mobile: get_rem(428);
-$breakpoint-tablet: get_rem(1024);
-$breakpoint-desktop: get_rem(1728);
+$breakpoint-mobile: 428px;
+$breakpoint-tablet: 1024px;
+$breakpoint-desktop: 1728px;
 
 // Spacing Scale
 $space-100: get_rem(4);

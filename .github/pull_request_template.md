@@ -10,11 +10,11 @@ Preview URL:
 
 ## Checklist
 
--   [] UI looks correct
--   [] No console errors
--   [] Responsive on common screen sizes
--   [] Tested manually
--   [] No breaking changes (or noted)
+- [] UI looks correct
+- [] No console errors
+- [] Responsive on common screen sizes
+- [] Tested manually
+- [] No breaking changes (or noted)
 
 ## Notes (optional)
 
