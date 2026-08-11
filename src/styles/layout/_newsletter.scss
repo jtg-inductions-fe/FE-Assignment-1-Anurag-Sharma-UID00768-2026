@@ -14,7 +14,7 @@
         align-items: flex-start;
         gap: get_rem(8);
 
-        &__heading {
+        &-heading {
             background-image: $palette-dark-blue;
             color: transparent;
             background-clip: text;
@@ -25,7 +25,7 @@
             word-break: normal;
         }
 
-        &__content {
+        &-content {
             background-image: $palette-dark-blue;
             color: transparent;
             background-clip: text;
@@ -71,13 +71,13 @@
             align-items: flex-start;
             gap: get_rem(19);
 
-            &__heading {
+            &-heading {
                 font-size: $fs-lg;
                 font-weight: $fw-medium;
                 max-width: get_rem(375);
             }
 
-            &__content {
+            &-content {
                 font-size: $fs-sm;
                 font-weight: $fw-light;
             }
@@ -97,13 +97,13 @@
             align-items: flex-start;
             gap: get_rem(19);
 
-            &__heading {
+            &-heading {
                 font-size: $fs-lg;
                 font-weight: $fw-medium;
                 max-width: get_rem(375);
             }
 
-            &__content {
+            &-content {
                 font-size: $fs-sm;
                 font-weight: $fw-light;
             }

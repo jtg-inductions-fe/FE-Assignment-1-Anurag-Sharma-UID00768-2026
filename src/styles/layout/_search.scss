@@ -16,12 +16,12 @@
         text-align: center;
     }
 
-    &__top__heading {
+    &__top-heading {
         font-size: $fs-md;
         font-weight: $fw-bold;
     }
 
-    &__top__text {
+    &__top-text {
         @include flex-column;
         gap: get_rem(2);
 
@@ -40,12 +40,12 @@
         border-radius: get_rem(30);
         background: transparent;
 
-        &__wrapper {
+        &-wrapper {
             @include flex-center;
             gap: get_rem(10);
         }
 
-        &__icon {
+        &-icon {
             margin-top: get_rem(8);
             padding: get_rem(3);
 
@@ -54,7 +54,7 @@
             }
         }
 
-        &__input {
+        &-input {
             width: get_rem(220);
             border: none;
             outline: none;
@@ -74,11 +74,11 @@
         min-height: get_rem(375);
         padding: get_rem(84) get_rem(24);
 
-        .hero__top__heading {
+        .hero__top-heading {
             font-size: $fs-3xl;
         }
 
-        .hero__top__text {
+        .hero__top-text {
             flex-direction: row;
             gap: get_rem(4);
         }
