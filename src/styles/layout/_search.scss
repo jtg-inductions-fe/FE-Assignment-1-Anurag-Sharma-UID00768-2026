@@ -1,0 +1,95 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/functions' as *;
+@use '../abstracts/mixins' as *;
+
+.hero {
+    @include flex-column;
+    min-height: get_rem(215);
+    padding: get_rem(32) get_rem(24);
+    gap: get_rem(30);
+    background: $palette-dark-blue;
+    color: $palette-white;
+
+    &__text {
+        @include flex-column;
+        gap: get_rem(15);
+        text-align: center;
+    }
+
+    &__top-heading {
+        font-size: $fs-md;
+        font-weight: $fw-bold;
+    }
+
+    &__top-text {
+        @include flex-column;
+        gap: get_rem(2);
+
+        .text {
+            font-size: $fs-sm;
+            font-weight: $fw-medium;
+        }
+    }
+
+    &__search {
+        @include flex-center;
+        width: 100%;
+        max-width: get_rem(586);
+        padding: get_rem(8) get_rem(34);
+        border: get_rem(1) solid $palette-white;
+        border-radius: get_rem(30);
+        background: transparent;
+
+        &-wrapper {
+            @include flex-center;
+            gap: get_rem(10);
+        }
+
+        &-icon {
+            margin-top: get_rem(8);
+            padding: get_rem(3);
+
+            .icon-search {
+                font-size: get_rem(20);
+            }
+        }
+
+        &-input {
+            width: get_rem(220);
+            border: none;
+            outline: none;
+            background: transparent;
+            line-height: 1;
+
+            &::placeholder {
+                color: $palette-white;
+                font-size: $fs-xs;
+                font-weight: $fw-regular;
+                opacity: 1;
+            }
+        }
+    }
+
+    @include tablet {
+        min-height: get_rem(375);
+        padding: get_rem(84) get_rem(24);
+
+        .hero__top-heading {
+            font-size: $fs-3xl;
+        }
+
+        .hero__top-text {
+            flex-direction: row;
+            gap: get_rem(4);
+        }
+
+        .hero__search__input::placeholder {
+            font-size: $fs-sm;
+        }
+    }
+
+    @include desktop {
+        min-height: get_rem(330);
+        padding: get_rem(84) get_rem(360);
+    }
+}

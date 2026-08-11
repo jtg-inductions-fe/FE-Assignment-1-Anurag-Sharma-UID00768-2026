@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
     <head>
-        <title>Title</title>
+        <title>Alura Books</title>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
@@ -17,12 +17,15 @@
         <header class="header">
             <nav class="navbar">
                 <div class="navbar__left">
-                    <button class="navbar__menu">
+                    <button class="navbar__menu" aria-label="Toggle menu">
                         <i class="icon-hamburger"></i>
                     </button>
 
                     <a href="#" class="navbar__logo">
-                        <img src="/public//assets/images/Logo.webp" alt="" />
+                        <img
+                            src="/public/assets/images/Logo.webp"
+                            alt="Alura Books Logo"
+                        />
                         <div>
                             <span class="alura">Alura</span
                             ><span class="books">Books</span>
@@ -63,21 +66,25 @@
                 </div>
 
                 <div class="navbar__actions">
-                    <a href="#" class="navbar__action navbar__action-fav">
+                    <a
+                        href="#"
+                        class="navbar__action navbar__action-fav"
+                        aria-label="Favourites"
+                    >
                         <i class="icon-heart"></i>
                     </a>
 
                     <a href="#" class="navbar__action">
-                        <span class="icon-nav-right"
-                            ><i class="icon-bag"></i
-                        ></span>
+                        <span class="icon-nav-right">
+                            <i class="icon-bag"></i>
+                        </span>
                         <span>My Bag</span>
                     </a>
 
                     <a href="#" class="navbar__action">
-                        <span class="icon-nav-right"
-                            ><i class="icon-profile"></i
-                        ></span>
+                        <span class="icon-nav-right">
+                            <i class="icon-profile"></i>
+                        </span>
                         <span>My Profile</span>
                     </a>
                 </div>
@@ -96,6 +103,30 @@
                 </div>
             </nav>
         </header>
+
+        <section class="hero">
+            <div class="hero__text">
+                <h2 class="hero__top-heading">
+                    Do you already know where to start?
+                </h2>
+                <div class="hero__top-text">
+                    <p class="text">Find what you need for your</p>
+                    <p class="text">development on our bookshelf!</p>
+                </div>
+            </div>
+            <div class="hero__search">
+                <div class="hero__search-wrapper">
+                    <div class="hero__search-icon">
+                        <i class="icon-search"></i>
+                    </div>
+                    <input
+                        type="text"
+                        class="hero__search-input"
+                        placeholder="What will your next read be?"
+                    />
+                </div>
+            </div>
+        </section>
 
         <script type="module" src="./src/script/index.js"></script>
     </body>

@@ -119,22 +119,29 @@ caption {
 
 @font-face {
   font-family: "icomoon";
-  src: url("../../public/assets/fonts/icomoon.eot?w8m66o");
-  src: url("../../public/assets/fonts/icomoon.eot?w8m66o#iefix") format("embedded-opentype"), url("../../public/assets/fonts/icomoon.ttf?w8m66o") format("truetype"), url("../../public/assets/fonts/icomoon.woff?w8m66o") format("woff"), url("../../public/assets/fonts/icomoon.svg?w8m66o#icomoon") format("svg");
+  src: url("../../public/assets/fonts/icomoon.eot?8kgpf2");
+  src: url("../../public/assets/fonts/icomoon.eot?8kgpf2#iefix") format("embedded-opentype"), url("../../public/assets/fonts/icomoon.ttf?8kgpf2") format("truetype"), url("../../public/assets/fonts/icomoon.woff?8kgpf2") format("woff"), url("../../public/assets/fonts/icomoon.svg?8kgpf2#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
 }
 [class^=icon-],
 [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
   font-family: "icomoon" !important;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
   text-transform: none;
   line-height: 1;
+  /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-search:before {
+  content: "\e905";
+  color: #fff;
 }
 
 .icon-hamburger:before {
@@ -415,5 +422,125 @@ caption {
   }
   .navbar__action-fav {
     display: none;
+  }
+}
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 13.4375rem;
+  padding: 2rem 1.5rem;
+  gap: 1.875rem;
+  background: linear-gradient(to right, #002f52, #326589);
+  color: #ffffff;
+}
+
+.hero__text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.625rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.9375rem;
+}
+
+.hero__top__heading {
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+
+.text {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.hero__top__text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.125rem;
+}
+
+.hero__search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 0.5rem 2.125rem;
+  border-radius: 1.875rem;
+  border: 0.0625rem solid #ffffff;
+  background: transparent;
+  max-width: 36.625rem;
+}
+
+.hero__search__icon {
+  margin-top: 0.5rem;
+  padding: 0.1875rem;
+}
+
+.icon-search {
+  font-size: 1.25rem;
+}
+
+.hero__search__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.625rem;
+}
+
+.hero__search__input::-moz-placeholder {
+  color: white;
+  opacity: 1;
+  font-size: 0.875rem;
+  font-weight: 400;
+}
+
+.hero__search__input::placeholder {
+  color: white;
+  opacity: 1;
+  font-size: 0.875rem;
+  font-weight: 400;
+}
+
+.hero__search__input {
+  width: 13.75rem;
+  outline: none;
+  border: none;
+  background: transparent;
+  line-height: 1;
+}
+
+@media (min-width: 1024px) {
+  .hero {
+    min-height: 23.4375rem;
+    padding: 5.25rem 1.5rem;
+  }
+  .hero__top__heading {
+    font-size: 2.25rem;
+    font-weight: 700;
+  }
+  .hero__top__text {
+    flex-direction: row;
+    gap: 0.25rem;
+  }
+  .hero__search__input::-moz-placeholder {
+    font-size: 1rem;
+  }
+  .hero__search__input::placeholder {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 1728px) {
+  .hero {
+    min-height: 20.625rem;
+    padding: 5.25rem 22.5rem;
   }
 }/*# sourceMappingURL=main.css.map */
