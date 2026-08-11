@@ -22,8 +22,19 @@ h3 {
 
 h4 {
     font-size: $fs-md;
-    font-weight: $fw-bold;
+    font-weight: $fw-regular;
     line-height: 1.4;
+
+    @include tablet {
+        font-size: $fs-lg;
+    }
+}
+
+h5 {
+    font-size: $fs-xs;
+    font-weight: $fw-regular;
+    color: $palette-light-grey;
+    text-transform: uppercase;
 }
 
 p {
