@@ -1,6 +1,6 @@
 @use 'abstracts/variables' as *;
 @use 'abstracts/mixins' as *;
-@use 'abstracts/functions';
+@use 'abstracts/functions' as *;
 
 @use 'base/reset';
 @use 'base/global';
@@ -14,3 +14,4 @@
 @use 'layout/navbar';
 @use 'layout/search';
 @use 'layout/best-sellers';
+@use 'layout/visited';
