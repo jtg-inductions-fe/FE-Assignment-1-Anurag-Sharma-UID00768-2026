@@ -57,7 +57,7 @@
         margin: 0 auto;
     }
 
-    &__pagination__wrapper {
+    &__pagination-wrapper {
         position: relative;
         padding: 20px;
     }
@@ -114,7 +114,7 @@
     }
 
     .swiper {
-        &__pagination__wrapper {
+        &__pagination-wrapper {
             position: relative;
             padding: 20px;
         }
@@ -149,7 +149,7 @@
 
 @include desktop {
     .release {
-        padding-bottom: get_rem(120);
+        padding-bottom: get_rem(30);
 
         &__bottom {
             display: flex;

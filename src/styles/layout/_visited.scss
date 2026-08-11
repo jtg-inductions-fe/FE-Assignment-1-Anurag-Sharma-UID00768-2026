@@ -3,7 +3,7 @@
 @use '../abstracts/variables' as *;
 
 .visited {
-    margin-top: get_rem(120);
+    margin-top: get_rem(60);
     @include flex-column;
     gap: get_rem(32);
     background: $palette-dark-blue;
