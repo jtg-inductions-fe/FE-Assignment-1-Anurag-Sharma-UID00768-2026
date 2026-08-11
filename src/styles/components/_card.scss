@@ -51,11 +51,9 @@
         gap: get_rem(10);
     }
 
-    &__text {
-        &__mid {
-            overflow-wrap: break-word;
-            text-align: left;
-        }
+    &__text-mid {
+        overflow-wrap: break-word;
+        text-align: left;
     }
 
     &__icons {
