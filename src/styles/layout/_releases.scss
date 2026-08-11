@@ -149,7 +149,7 @@
 
 @include desktop {
     .release {
-        padding-bottom: get_rem(120);
+        padding-bottom: get_rem(30);
 
         &__bottom {
             display: flex;
