@@ -9,5 +9,7 @@
 @use 'base/utilities';
 
 @use 'vendors/icons';
+@use 'layout/releases.scss';
+@use 'components/card';
 @use 'layout/navbar';
 @use 'layout/search';

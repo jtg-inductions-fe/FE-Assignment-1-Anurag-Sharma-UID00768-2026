@@ -1,0 +1,197 @@
+@use '../abstracts/functions' as *;
+@use '../abstracts/mixins' as *;
+@use '../abstracts/variables' as *;
+
+.release {
+    @include flex-column;
+    width: 100vw;
+    position: relative;
+    padding: get_rem(2);
+    padding-bottom: get_rem(20);
+
+    &__bottom {
+        position: relative;
+        width: 100%;
+        padding: get_rem(5) 0;
+    }
+
+    &__top {
+        padding-top: get-rem(18);
+        padding-bottom: get_rem(8);
+        text-align: center;
+        background: $palette-white;
+        width: 100%;
+
+        p {
+            color: $palette-orange;
+            font-weight: $fw-bold;
+            font-size: $fs-md;
+            text-transform: uppercase;
+        }
+    }
+
+    &__heart,
+    &__bag {
+        font-size: get_rem(25) !important;
+    }
+
+    &__button {
+        padding: get_rem(10) get_rem(30);
+        text-align: center;
+        font-size: $fs-sm;
+        font-weight: $fw-bold;
+        color: $palette-white;
+        background: $palette-orange;
+    }
+}
+
+.swiper {
+    height: 100%;
+    position: relative;
+    padding-top: get_rem(40);
+    max-width: get_rem(725);
+
+    &__cover {
+        position: relative;
+        width: min(100%, get_rem(725));
+        margin: 0 auto;
+    }
+
+    &__pagination-wrapper {
+        position: relative;
+        padding: 20px;
+    }
+
+    &-wrapper {
+        position: relative;
+        height: 100%;
+        margin-top: get_rem(10);
+        overflow-x: visible !important;
+    }
+
+    &-slide {
+        height: get_rem(250) !important;
+        width: get_rem(180) !important;
+        box-shadow: get_rem(2) get_rem(4) get_rem(8) 0 rgba(0, 0, 0, 0.15);
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+
+    &-button-prev,
+    &-button-next {
+        display: none !important;
+        background: $palette-dark-blue !important;
+        border-radius: 50%;
+        height: get_rem(48) !important;
+        width: get_rem(48) !important;
+        box-sizing: border-box !important;
+        padding: get_rem(16);
+        color: $palette-white !important;
+        font-size: get_rem(15) !important;
+        font-weight: $fw-bold !important;
+        cursor: pointer;
+    }
+}
+
+@include tablet {
+    .release {
+        padding-bottom: get_rem(48);
+
+        &__bottom {
+            @include flex-column;
+            gap: get_rem(30);
+        }
+
+        &__top {
+            p {
+                font-size: $fs-xl;
+            }
+        }
+    }
+
+    .swiper {
+        &__pagination-wrapper {
+            position: relative;
+            padding: 20px;
+        }
+
+        &-pagination {
+            margin-top: get_rem(25);
+        }
+
+        &-wrapper {
+            margin-top: get_rem(60);
+        }
+
+        &-slide {
+            height: get_rem(260) !important;
+        }
+
+        &-button-prev {
+            display: flex !important;
+            position: absolute !important;
+            top: get_rem(220) !important;
+            left: get_rem(-30) !important;
+        }
+
+        &-button-next {
+            display: flex !important;
+            position: absolute !important;
+            top: get_rem(220) !important;
+            right: get_rem(-30) !important;
+        }
+    }
+}
+
+@include desktop {
+    .release {
+        padding-bottom: get_rem(30);
+
+        &__bottom {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: get_rem(40);
+            width: 100%;
+            padding: get_rem(46) 0;
+        }
+
+        &__top {
+            p {
+                font-size: get_rem(32);
+            }
+        }
+    }
+
+    .swiper {
+        &__cover {
+            width: get_rem(600);
+            margin: 0;
+            height: 100%;
+        }
+
+        &-wrapper {
+            margin-top: get_rem(20);
+            padding-bottom: get_rem(50);
+        }
+
+        &-button-prev {
+            display: flex !important;
+            position: absolute !important;
+            top: get_rem(190) !important;
+            left: get_rem(-35) !important;
+        }
+
+        &-button-next {
+            display: flex !important;
+            position: absolute !important;
+            top: get_rem(190) !important;
+            right: get_rem(-30) !important;
+        }
+    }
+}

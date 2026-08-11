@@ -1,3 +1,40 @@
+import Swiper from 'swiper';
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+import { Navigation, Pagination } from 'swiper/modules';
+
+new Swiper('.swiper', {
+    modules: [Navigation, Pagination],
+    spaceBetween: 25,
+
+    slidesPerView: 4,
+
+    loop: true,
+
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+        dynamicBullets: true,
+        dynamicMainBullets: 3,
+    },
+
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    breakpoints: {
+        1024: {
+            slidesPerView: 4,
+            spaceBetween: 75,
+        },
+
+        1728: {
+            slidesPerView: 4,
+        },
+    },
+});
+
 const hamburger = document.querySelector('.navbar__menu');
 const mobileMenu = document.querySelector('.mobile__menu');
 const hamIcon = document.querySelector('.icon-hamburger');
